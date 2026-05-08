@@ -1,0 +1,22 @@
+=== Algorithm Comparator ===
+Algorithms : MCAA, GA, PSO, Random
+Scenarios  : uncertainty
+Iterations : 20
+=============================
+
+Algorithm Comparator – running with algorithms: MCAA,GA,PSO,Random, scenarios: uncertainty, iterations: 20
+
+---- Scenario: uncertainty ----
+(Orders: 20, Resources: 8)
+
+Algorithm        AvgScore      Min      Max   StdDev  AvgTimeMs
+---------------------------------------------------------
+MCAA               0,4374   0,4374   0,4374   0,0000        0,5
+GA                 0,4410   0,4387   0,4434   0,0010        4,4
+PSO                0,4490   0,4088   0,6487   0,0637        2,9
+Random             0,4001   0,3859   0,4210   0,0090        0,0
+
+Winner for 'uncertainty': PSO
+
+Algorithm comparison finished successfully.
+Comparison completed.

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logistics MAS - Hard Algorithm Comparison Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; }
+    h3 { color: #7f8c8d; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+    th { background-color: #3498db; color: white; }
+    tr:nth-child(even) { background-color: #ecf0f1; }
+    .winner { background-color: #d5f4e6; font-weight: bold; }
+    .metric { color: #2980b9; font-weight: bold; }
+    .best { color: #27ae60; font-weight: bold; }
+    .explanation { background-color: #f9f9f9; padding: 15px; border-left: 4px solid #3498db; margin: 20px 0; }
+    .chart { margin: 20px 0; padding: 10px; background-color: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>Logistics Multi-Agent System - Hard Algorithm Comparison Report</h1>
+  <p>Generated: 2026-05-03 17:43:02</p>
+  <h2>Executive Summary</h2>
+  <div class="explanation">
+    <p>This report presents a comprehensive comparison of optimization algorithms on <strong>large-scale</strong>     logistics problems. Each scenario contains 80-120 orders with 15-25 resources and 10 proposals per order.</p>
+    <p>The algorithms were configured with increased parameters to handle the larger problem size:</p>
+    <ul>
+      <li><strong>GA</strong>: 400-600 generations (vs. standard 100)</li>
+      <li><strong>SA</strong>: 8,000-12,000 iterations (vs. standard 1,000)</li>
+      <li><strong>PSO</strong>: 80-120 particles (vs. standard 30)</li>
+    </ul>
+  </div>
+  <h2>Overall Results</h2>
+  <table>
+    <tr><th>Algorithm</th><th>Wins</th><th>Average Score</th><th>Win Rate</th></tr>
+    <tr class="winner"><td>MCAA</td><td>2</td><td>0,3382</td><td>66,7%</td></tr>
+    <tr><td>PSO</td><td>1</td><td>0,2871</td><td>33,3%</td></tr>
+  </table>
+  <h2>Detailed Results by Scenario</h2>
+  <h3>Very Large Scale Logistics</h3>
+  <p>100 orders, 20 resources with tight constraints</p>
+  <p><strong>Problem Size:</strong> 100 orders, 20 resources</p>
+  <p><strong>Algorithm Parameters:</strong> GA=500 generations, SA=10000 iterations, PSO=100 particles</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>PSO</td><td>0,3486</td><td>$6 347</td><td>184,2h</td><td>0,081</td><td>34</td></tr>
+    <tr><td>MCAA</td><td>0,3451</td><td>$66 221</td><td>1 247,8h</td><td>0,920</td><td>10</td></tr>
+    <tr><td>GA</td><td>0,3234</td><td>$57 320</td><td>1 652,7h</td><td>0,853</td><td>41</td></tr>
+    <tr><td>Random</td><td>0,2935</td><td>$59 863</td><td>2 041,2h</td><td>0,773</td><td>0</td></tr>
+    <tr><td>SA</td><td>0,2882</td><td>$65 413</td><td>1 957,3h</td><td>0,763</td><td>15</td></tr>
+    <tr><td>RoundRobin</td><td>0,2823</td><td>$64 369</td><td>2 088,6h</td><td>0,746</td><td>2</td></tr>
+    <tr><td>FCFS</td><td>0,2800</td><td>$65 242</td><td>2 086,1h</td><td>0,740</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: PSO</strong></p>
+    <p>The PSO algorithm achieved the highest score of 0,3486 in this scenario.</p>
+    <p>This represents a 24,5% improvement over the worst performing algorithm (FCFS).</p>
+  </div>
+  <h3>Extreme Urgency - Many Resources</h3>
+  <p>80 orders, 25 resources with very tight time constraints</p>
+  <p><strong>Problem Size:</strong> 80 orders, 25 resources</p>
+  <p><strong>Algorithm Parameters:</strong> GA=400 generations, SA=8000 iterations, PSO=80 particles</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>MCAA</td><td>0,3431</td><td>$89 918</td><td>995,9h</td><td>0,922</td><td>0</td></tr>
+    <tr><td>GA</td><td>0,3187</td><td>$72 945</td><td>1 310,2h</td><td>0,847</td><td>13</td></tr>
+    <tr><td>SA</td><td>0,2846</td><td>$80 589</td><td>1 533,3h</td><td>0,757</td><td>7</td></tr>
+    <tr><td>FCFS</td><td>0,2817</td><td>$84 885</td><td>1 636,4h</td><td>0,757</td><td>0</td></tr>
+    <tr><td>Random</td><td>0,2790</td><td>$89 540</td><td>1 663,1h</td><td>0,754</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,2785</td><td>$86 545</td><td>1 608,7h</td><td>0,747</td><td>0</td></tr>
+    <tr><td>PSO</td><td>0,2386</td><td>$18 999</td><td>395,3h</td><td>0,181</td><td>7</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: MCAA</strong></p>
+    <p>The MCAA algorithm achieved the highest score of 0,3431 in this scenario.</p>
+    <p>This represents a 43,8% improvement over the worst performing algorithm (PSO).</p>
+  </div>
+  <h3>Budget-Constrained Large Scale</h3>
+  <p>120 orders, 15 resources with extreme budget constraints</p>
+  <p><strong>Problem Size:</strong> 120 orders, 15 resources</p>
+  <p><strong>Algorithm Parameters:</strong> GA=600 generations, SA=12000 iterations, PSO=120 particles</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>MCAA</td><td>0,3264</td><td>$80 848</td><td>4 056,3h</td><td>0,946</td><td>1</td></tr>
+    <tr><td>GA</td><td>0,2923</td><td>$68 904</td><td>4 263,2h</td><td>0,817</td><td>16</td></tr>
+    <tr><td>PSO</td><td>0,2740</td><td>$73 329</td><td>4 203,0h</td><td>0,762</td><td>48</td></tr>
+    <tr><td>Random</td><td>0,2690</td><td>$76 661</td><td>5 257,6h</td><td>0,756</td><td>0</td></tr>
+    <tr><td>SA</td><td>0,2678</td><td>$78 625</td><td>4 700,7h</td><td>0,752</td><td>2</td></tr>
+    <tr><td>RoundRobin</td><td>0,2641</td><td>$85 123</td><td>4 941,2h</td><td>0,749</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,2554</td><td>$84 794</td><td>5 092,9h</td><td>0,720</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: MCAA</strong></p>
+    <p>The MCAA algorithm achieved the highest score of 0,3264 in this scenario.</p>
+    <p>This represents a 27,8% improvement over the worst performing algorithm (FCFS).</p>
+  </div>
+  <h2>Algorithm Analysis</h2>
+  <div class="explanation">
+    <h3>Performance on Large-Scale Problems</h3>
+    <p>On large-scale problems, the algorithms show different characteristics:</p>
+    <ul>
+      <li><strong>MCAA</strong>: Fast execution but may get stuck in local optima on complex problems</li>
+      <li><strong>GA</strong>: Good exploration but requires many generations for large search spaces</li>
+      <li><strong>SA</strong>: Good balance of exploration and exploitation with proper cooling schedule</li>
+      <li><strong>PSO</strong>: Fast convergence but may converge prematurely on large problems</li>
+    </ul>
+  </div>
+  <h2>Conclusions</h2>
+  <div class="explanation">
+    <p>Based on the large-scale testing:</p>
+    <ul>
+      <li><strong>MCAA</strong> achieved the highest average score across all scenarios.</li>
+      <li>Algorithm selection becomes more critical as problem size increases.</li>
+      <li>Execution time increases significantly with problem size - plan accordingly.</li>
+      <li>For real-time applications with large problems, consider hybrid approaches.</li>
+    </ul>
+  </div>
+</body>
+</html>

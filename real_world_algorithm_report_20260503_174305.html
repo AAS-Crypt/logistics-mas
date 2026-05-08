@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-World Algorithm Comparison Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+    th { background-color: #3498db; color: white; }
+    tr:nth-child(even) { background-color: #ecf0f1; }
+    .winner { background-color: #d5f4e6; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Real-World Logistics Algorithm Comparison Report</h1>
+  <p>Generated: 2026-05-03 17:43:05</p>
+  <h2>Cross-Country Delivery</h2>
+  <p>Deliveries from LA warehouse to East Coast customers</p>
+  <p><strong>Warehouses:</strong> Los Angeles</p>
+  <p><strong>Customers:</strong> New York, Boston, Philadelphia, Charlotte, Jacksonville</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>FCFS</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>1</td></tr>
+    <tr><td>Adaptive</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>14</td></tr>
+    <tr><td>MCAA+PSO</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>4</td></tr>
+    <tr><td>MCAA+SA</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>2</td></tr>
+    <tr><td>MCAA+GA</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>5</td></tr>
+    <tr><td>PSO</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>13</td></tr>
+    <tr><td>SA</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>4</td></tr>
+    <tr><td>GA</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>22</td></tr>
+    <tr><td>MCAA</td><td>0,3654</td><td>$19 385</td><td>650,9h</td><td>0,700</td><td>5</td></tr>
+  </table>
+  <h2>Midwest Regional Hub</h2>
+  <p>Chicago warehouse serving Midwest region</p>
+  <p><strong>Warehouses:</strong> Chicago</p>
+  <p><strong>Customers:</strong> Columbus, Nashville, Denver, Dallas, Houston</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>Adaptive</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+    <tr><td>MCAA+PSO</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>2</td></tr>
+    <tr><td>MCAA+SA</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+    <tr><td>MCAA+GA</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>7</td></tr>
+    <tr><td>PSO</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>2</td></tr>
+    <tr><td>GA</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>6</td></tr>
+    <tr><td>SA</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+    <tr><td>MCAA</td><td>0,6328</td><td>$3 693</td><td>175,1h</td><td>0,894</td><td>0</td></tr>
+  </table>
+  <h2>Multi-Warehouse Network</h2>
+  <p>Multiple warehouses serving nationwide customers</p>
+  <p><strong>Warehouses:</strong> Chicago, Los Angeles, Dallas, Atlanta</p>
+  <p><strong>Customers:</strong> New York, Seattle, Phoenix, Boston, San Diego</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>GA</td><td>0,5805</td><td>$6 816</td><td>199,1h</td><td>0,895</td><td>5</td></tr>
+    <tr><td>Adaptive</td><td>0,5800</td><td>$6 795</td><td>201,5h</td><td>0,896</td><td>1</td></tr>
+    <tr><td>MCAA+PSO</td><td>0,5800</td><td>$6 795</td><td>201,5h</td><td>0,896</td><td>2</td></tr>
+    <tr><td>MCAA+SA</td><td>0,5800</td><td>$6 795</td><td>201,5h</td><td>0,896</td><td>0</td></tr>
+    <tr><td>MCAA+GA</td><td>0,5800</td><td>$6 795</td><td>201,5h</td><td>0,896</td><td>3</td></tr>
+    <tr><td>MCAA</td><td>0,5800</td><td>$6 795</td><td>201,5h</td><td>0,896</td><td>0</td></tr>
+    <tr><td>SA</td><td>0,5554</td><td>$7 896</td><td>224,7h</td><td>0,882</td><td>1</td></tr>
+    <tr><td>PSO</td><td>0,4993</td><td>$10 055</td><td>318,3h</td><td>0,847</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,4867</td><td>$10 483</td><td>341,0h</td><td>0,832</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,4378</td><td>$13 514</td><td>443,5h</td><td>0,789</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,4307</td><td>$14 455</td><td>459,4h</td><td>0,789</td><td>0</td></tr>
+  </table>
+  <h2>Time-Critical Express</h2>
+  <p>Urgent deliveries with tight time constraints</p>
+  <p><strong>Warehouses:</strong> Dallas</p>
+  <p><strong>Customers:</strong> Houston, Austin, San Antonio, Fort Worth</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>Adaptive</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+    <tr><td>MCAA+PSO</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>3</td></tr>
+    <tr><td>MCAA+SA</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+    <tr><td>MCAA+GA</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>3</td></tr>
+    <tr><td>PSO</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>1</td></tr>
+    <tr><td>GA</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>3</td></tr>
+    <tr><td>SA</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+    <tr><td>MCAA</td><td>0,8906</td><td>$1 850</td><td>15,5h</td><td>0,970</td><td>0</td></tr>
+  </table>
+  <h2>Budget-Constrained Nationwide</h2>
+  <p>Cost-optimized deliveries across the country</p>
+  <p><strong>Warehouses:</strong> Atlanta, Chicago</p>
+  <p><strong>Customers:</strong> New York, Los Angeles, Seattle, Miami, Denver</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>SA</td><td>0,5036</td><td>$6 006</td><td>452,7h</td><td>0,813</td><td>1</td></tr>
+    <tr><td>PSO</td><td>0,5036</td><td>$6 090</td><td>446,8h</td><td>0,813</td><td>1</td></tr>
+    <tr><td>GA</td><td>0,5036</td><td>$6 090</td><td>446,8h</td><td>0,813</td><td>3</td></tr>
+    <tr><td>Adaptive</td><td>0,5028</td><td>$6 139</td><td>450,3h</td><td>0,814</td><td>1</td></tr>
+    <tr><td>MCAA+PSO</td><td>0,5028</td><td>$6 139</td><td>450,3h</td><td>0,814</td><td>1</td></tr>
+    <tr><td>MCAA+SA</td><td>0,5028</td><td>$6 139</td><td>450,3h</td><td>0,814</td><td>0</td></tr>
+    <tr><td>MCAA+GA</td><td>0,5028</td><td>$6 139</td><td>450,3h</td><td>0,814</td><td>3</td></tr>
+    <tr><td>MCAA</td><td>0,5028</td><td>$6 139</td><td>450,3h</td><td>0,814</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,4925</td><td>$6 114</td><td>515,8h</td><td>0,804</td><td>0</td></tr>
+    <tr><td>Random</td><td>0,4886</td><td>$6 343</td><td>511,6h</td><td>0,799</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,4742</td><td>$6 977</td><td>581,3h</td><td>0,796</td><td>0</td></tr>
+  </table>
+</body>
+</html>

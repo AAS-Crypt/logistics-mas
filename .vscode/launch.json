@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AlgorithmComparisonTest",
+            "request": "launch",
+            "mainClass": "com.logistics.test.AlgorithmComparisonTest",
+            "projectName": "logistics-mas"
+        },
+        {
+            "type": "java",
+            "name": "Launch JADE Main Container",
+            "request": "launch",
+            "mainClass": "jade.Boot",
+            "args": "-gui -agents hello:com.logistics.test.HelloAgent",
+            "classpath": [
+                "bin",
+                "lib/jade.jar",
+                "lib/commons-codec-1.3.jar"
+            ],
+            "projectName": "logistics-mas"
+        }
+    ]
+}
