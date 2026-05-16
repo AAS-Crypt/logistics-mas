@@ -12,11 +12,8 @@ public class Order implements Concept {
     private int priority;
     private double maxBudget;
 
-    
-
     public Order() {}
 
-    
     public String getOrderId() { return orderId; }
     public void setOrderId(String orderId) { this.orderId = orderId; }
 

@@ -1,0 +1,256 @@
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:12:59 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 48.31236821601642 hours
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6393.60295836578
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 87.85886927950475%
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 91.27372428553379%
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:14:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 44.89741278351189 hours
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5654.09612719522
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 87.79224882612591%
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 91.96121349005502%
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:16:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 20.63376650415969 hours
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5252.037663455582
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 87.98144032062778%
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 93.79094218792925%
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:18:10 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 22.7954919866211 hours
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5193.966203406969
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 94.50410763047833%
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 90.62243357145512%
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:19:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 41.81128743623893 hours
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5061.04902113468
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 93.0370963579264%
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 91.29756983570388%
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:20:22 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 20.822188836181326 hours
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6516.536709558227
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 94.69533943197453%
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 97.36195404312988%
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:26:51 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 27.135958418474548 hours
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5051.342615754054
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 88.25679923458218%
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 94.18525476158369%
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: High priority orders with tight deadlines
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing high_priority scenario...
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 high priority orders
+мая 08, 2026 4:28:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgency level: 0.8
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: high_priority
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 44.74857073476735 hours
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5600.701848628962
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 85.712197499965%
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Priority orders completed on time: 92.49597359823689%

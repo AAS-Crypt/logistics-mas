@@ -7,11 +7,9 @@ public class EventNotification implements Predicate {
     private Event event;
 
     public EventNotification() {}
-
     public EventNotification(Event event) {
         this.event = event;
     }
-
     public Event getEvent() { return event; }
     public void setEvent(Event event) { this.event = event; }
 }

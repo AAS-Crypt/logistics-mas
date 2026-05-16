@@ -10,7 +10,6 @@ public class Cargo implements Concept {
     private float maxTemperature;  
 
     public Cargo() {}
-
     
     public String getCargoId() { return cargoId; }
     public void setCargoId(String cargoId) { this.cargoId = cargoId; }

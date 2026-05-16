@@ -1,0 +1,256 @@
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 45.70132951370186 hours
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5464.7982913666465
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 92.00231362103995%
+мая 08, 2026 4:13:02 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 85.18283755657153%
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 35.39084133469717 hours
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5058.613737465033
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 85.43394237474743%
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 81.16364468954548%
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 29.17412125966342 hours
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7303.888423126127
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 88.52672641252157%
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 93.99503158038716%
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:18:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 23.48686680902339 hours
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6562.17921239347
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 88.21877168974987%
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 89.86786436571789%
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 39.025120870720755 hours
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7312.7331097515635
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 94.20605665152846%
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 81.52008885278268%
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:20:25 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 35.55442881638274 hours
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7907.221034801607
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 85.48245703331945%
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 82.17146840254283%
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 22.700047046715795 hours
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5022.291525274899
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 93.12064304513177%
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 76.07732059535898%
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Many resources with varying capacities
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=50, resources=10
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing multiple_resources scenario...
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 resources
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Processing 50 orders
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: multiple_resources
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 50
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 10
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 27.851664871177533 hours
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5026.614030451095
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 86.36747081200649%
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resource utilization: 80.84783458741319%

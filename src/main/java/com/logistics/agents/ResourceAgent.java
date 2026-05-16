@@ -123,12 +123,10 @@ public class ResourceAgent extends Agent {
             }
         }
     }
-
      
     public boolean wouldCreateConflict(AID newOrder) {
         return activeContractOrder != null || !pendingOrders.isEmpty();
     }
-
      
     public void registerAcceptedOrder(AID orderAID, Order order) {
         pendingOrders.put(orderAID, order);
@@ -138,14 +136,12 @@ public class ResourceAgent extends Agent {
             escalateConflict();
         }
     }
-
      
     public void confirmContract(AID orderAID) {
         activeContractOrder = orderAID;
         pendingOrders.clear();
         Logger.info(getLocalName(), "Contract confirmed with: " + orderAID.getLocalName());
     }
-
      
     private void escalateConflict() {
         if (pendingOrders.size() < 2) {
@@ -183,7 +179,6 @@ public class ResourceAgent extends Agent {
             Logger.error(getLocalName(), "Failed to send conflict escalation", e);
         }
     }
-
      
     private double calculateWinUtility(Order order) {
         long now = System.currentTimeMillis();
@@ -192,13 +187,11 @@ public class ResourceAgent extends Agent {
         if (timeToDeadline <= 0) return -1000; 
         return (1.0 / order.getPriority()) * (1.0 / (timeToDeadline / 3600000.0 + 1));
     }
-
      
     private double calculateLoseUtility(Order order) {
         return -50.0; 
     }
 
-     
     private void handleArbitrationResult(com.logistics.ontology.predicates.ArbitrationResult result) {
         AID winner = result.getWinner();
         AID loser = result.getLoser();
@@ -212,7 +205,6 @@ public class ResourceAgent extends Agent {
             pendingOrders.remove(loser);
         }
     }
-
      
     private class EventHandlingBehaviour extends CyclicBehaviour {
         private static final double SEVERITY_LOW = 0.3;
@@ -252,7 +244,6 @@ public class ResourceAgent extends Agent {
                 block();
             }
         }
-
          
         private double calculateImpact(Event event) {
             double severity = mapSeverity(event.getSeverity());
@@ -285,7 +276,6 @@ public class ResourceAgent extends Agent {
             }
             return 0.3; 
         }
-
          
         private void handleLocalCorrection(Event event, double impact) {
             Logger.info(getLocalName(), "AERA: Local correction (impact=" + impact + "). Updating ETA for active orders.");
@@ -301,7 +291,6 @@ public class ResourceAgent extends Agent {
             }
         }
 
-         
         private void escalateToManager(Event event, double impact) {
             Logger.warning(getLocalName(), "AERA: Escalating to ManagerAgent (impact=" + impact + "). Global replanning required.");
             AID managerAID = new AID("manager", AID.ISLOCALNAME);

@@ -10,10 +10,8 @@ public class ConflictData implements Predicate {
     private List<Double> utilitiesIfWin;   
     private List<Double> utilitiesIfLose;  
 
-    
     public ConflictData() {}
 
-    
     public AID getResource() { return resource; }
     public void setResource(AID resource) { this.resource = resource; }
 

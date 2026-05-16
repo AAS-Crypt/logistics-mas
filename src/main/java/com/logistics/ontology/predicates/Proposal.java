@@ -17,7 +17,6 @@ public class Proposal implements Predicate {
 
     public Proposal() {}
 
-    
     public Order getOrder() { return order; }
     public void setOrder(Order order) { this.order = order; }
 

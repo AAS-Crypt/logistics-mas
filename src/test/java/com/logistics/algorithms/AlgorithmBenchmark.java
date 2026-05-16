@@ -6,20 +6,15 @@ import com.logistics.ontology.concepts.Order;
 import com.logistics.ontology.predicates.Proposal;
 import java.util.*;
 
-
 public class AlgorithmBenchmark {
 
     @Test
     public void testAlgorithmComparison() {
-        
         Order order = new Order();
         order.setOrderId("BENCH-001");
         order.setPriority(1);
         order.setDeadline(new Date(System.currentTimeMillis() + 48 * 3600 * 1000));
-
-        
         List<Proposal> proposals = new ArrayList<>();
-        
         
         Proposal p1 = new Proposal();
         p1.setOrder(order);
@@ -28,7 +23,6 @@ public class AlgorithmBenchmark {
         p1.setReliability(0.9);
         proposals.add(p1);
 
-        
         Proposal p2 = new Proposal();
         p2.setOrder(order);
         p2.setPrice(500);
@@ -36,7 +30,6 @@ public class AlgorithmBenchmark {
         p2.setReliability(0.8);
         proposals.add(p2);
 
-        
         Proposal p3 = new Proposal();
         p3.setOrder(order);
         p3.setPrice(750);
@@ -44,7 +37,6 @@ public class AlgorithmBenchmark {
         p3.setReliability(0.85);
         proposals.add(p3);
 
-        
         Map<Integer, Double> mcaaScores = new HashMap<>();
         for (int i = 0; i < proposals.size(); i++) {
             mcaaScores.put(i, MCAA.computeScore(order, proposals.get(i)));
@@ -53,23 +45,16 @@ public class AlgorithmBenchmark {
             .max(Map.Entry.comparingByValue())
             .map(Map.Entry::getKey)
             .orElse(-1);
-
         
         int rrBest = RoundRobinAllocator.selectProposal(proposals);
-
-        
         int randomBest = RandomAllocator.selectProposal(proposals);
-
-        
         int fcfsBest = FCFSAllocator.selectProposal(proposals);
 
-        
         assertTrue(mcaaBest >= 0 && mcaaBest < proposals.size(), "MCAA should select valid proposal");
         assertTrue(rrBest >= 0 && rrBest < proposals.size(), "Round Robin should select valid proposal");
         assertTrue(randomBest >= 0 && randomBest < proposals.size(), "Random should select valid proposal");
         assertTrue(fcfsBest >= 0 && fcfsBest < proposals.size(), "FCFS should select valid proposal");
 
-        
         System.out.println("=== Algorithm Benchmark ===");
         System.out.println("MCAA selected: Proposal " + (mcaaBest + 1) + " (score: " + mcaaScores.get(mcaaBest) + ")");
         System.out.println("Round Robin selected: Proposal " + (rrBest + 1));
@@ -79,13 +64,10 @@ public class AlgorithmBenchmark {
 
     @Test
     public void testMCAA_OptimalSelection() {
-        
         Order order = new Order();
         order.setOrderId("OPTIMAL-001");
         order.setPriority(1);
         order.setDeadline(new Date(System.currentTimeMillis() + 24 * 3600 * 1000));
-
-        
         List<Proposal> proposals = new ArrayList<>();
         
         Proposal p1 = new Proposal();
@@ -102,14 +84,10 @@ public class AlgorithmBenchmark {
         p2.setReliability(0.8);
         proposals.add(p2);
 
-        
         Map<Integer, Double> scores = new HashMap<>();
         for (int i = 0; i < proposals.size(); i++) {
             scores.put(i, MCAA.computeScore(order, proposals.get(i)));
         }
-
-        
-        assertTrue(scores.get(0) > scores.get(1), 
-            "MCAA should prefer faster delivery (Proposal 1)");
+        assertTrue(scores.get(0) > scores.get(1),  "MCAA should prefer faster delivery (Proposal 1)");
     }
 }

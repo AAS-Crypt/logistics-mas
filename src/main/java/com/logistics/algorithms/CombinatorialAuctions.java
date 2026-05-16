@@ -2,7 +2,6 @@ package com.logistics.algorithms;
 
 import java.util.*;
 
-
 public class CombinatorialAuctions {
     public static class Bid {
         private String bidderId;
@@ -14,19 +13,15 @@ public class CombinatorialAuctions {
             this.bundle = new HashSet<>(bundle);
             this.amount = amount;
         }
-        
         public String getBidderId() {
             return bidderId;
         }
-        
         public Set<String> getBundle() {
             return bundle;
         }
-        
         public double getAmount() {
             return amount;
         }
-        
         public boolean conflictsWith(Bid other) {
             for (String resource : bundle) {
                 if (other.bundle.contains(resource)) {
@@ -36,7 +31,6 @@ public class CombinatorialAuctions {
             return false;
         }
     }
-    
      
     public static class AuctionResult {
         private Set<Bid> winningBids;
@@ -47,37 +41,29 @@ public class CombinatorialAuctions {
             this.winningBids = winningBids;
             this.totalRevenue = totalRevenue;
             this.allocation = new HashMap<>();
-            
             for (Bid bid : winningBids) {
                 for (String resource : bid.getBundle()) {
                     allocation.put(resource, bid.getBidderId());
                 }
             }
         }
-        
         public Set<Bid> getWinningBids() {
             return winningBids;
         }
-        
         public double getTotalRevenue() {
             return totalRevenue;
         }
-        
         public Map<String, String> getAllocation() {
             return allocation;
         }
     }
-    
      
     public static AuctionResult runAuction(List<Bid> bids, Set<String> availableResources) {
-        
         List<Bid> sortedBids = new ArrayList<>(bids);
         sortedBids.sort((b1, b2) -> Double.compare(b2.getAmount(), b1.getAmount()));
-        
         Set<Bid> winningBids = new HashSet<>();
         Set<String> allocatedResources = new HashSet<>();
         double totalRevenue = 0;
-        
         for (Bid bid : sortedBids) {
             boolean canAllocate = true;
             for (String resource : bid.getBundle()) {
@@ -86,17 +72,14 @@ public class CombinatorialAuctions {
                     break;
                 }
             }
-            
             if (canAllocate && bid.getBundle().size() <= availableResources.size()) {
                 winningBids.add(bid);
                 allocatedResources.addAll(bid.getBundle());
                 totalRevenue += bid.getAmount();
             }
         }
-        
         return new AuctionResult(winningBids, totalRevenue);
     }
-    
      
     public static AuctionResult runVCGAuction(List<Bid> bids, Set<String> availableResources) {
         AuctionResult optimalResult = runAuction(bids, availableResources);
@@ -110,17 +93,14 @@ public class CombinatorialAuctions {
             double payment = othersWelfareWithout - othersWelfareWith;
             payments.put(winningBid.getBidderId(), payment);
         }
-        
         Set<Bid> vcgWinningBids = new HashSet<>();
         for (Bid bid : optimalResult.getWinningBids()) {
             double vcgPayment = payments.getOrDefault(bid.getBidderId(), bid.getAmount());
             vcgWinningBids.add(new Bid(bid.getBidderId(), bid.getBundle(), vcgPayment));
         }
-        
         double totalVCGRevenue = vcgWinningBids.stream().mapToDouble(Bid::getAmount).sum();
         return new AuctionResult(vcgWinningBids, totalVCGRevenue);
     }
-    
      
     public static List<Bid> generateRandomBids(int numBidders, Set<String> resources, int maxBundleSize) {
         List<Bid> bids = new ArrayList<>();
@@ -138,7 +118,6 @@ public class CombinatorialAuctions {
         }
         return bids;
     }
-    
      
     public static double calculateEfficiency(AuctionResult result, List<Bid> allBids) {
         double maxWelfare = 0;

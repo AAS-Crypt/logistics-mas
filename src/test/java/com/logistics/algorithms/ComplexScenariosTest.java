@@ -6,7 +6,6 @@ import com.logistics.ontology.concepts.Order;
 import com.logistics.ontology.predicates.Proposal;
 import java.util.*;
 
-
 public class ComplexScenariosTest {
 
     @Test
@@ -15,9 +14,7 @@ public class ComplexScenariosTest {
         order.setOrderId("HIGH-PRIORITY-001");
         order.setPriority(1); 
         order.setDeadline(new Date(System.currentTimeMillis() + 6 * 3600 * 1000)); 
-
         List<Proposal> proposals = new ArrayList<>();
-        
         
         Proposal p1 = new Proposal();
         p1.setOrder(order);
@@ -26,7 +23,6 @@ public class ComplexScenariosTest {
         p1.setReliability(0.95);
         proposals.add(p1);
 
-        
         Proposal p2 = new Proposal();
         p2.setOrder(order);
         p2.setPrice(800);
@@ -38,10 +34,7 @@ public class ComplexScenariosTest {
         for (int i = 0; i < proposals.size(); i++) {
             scores.put(i, MCAA.computeScore(order, proposals.get(i)));
         }
-
-        
-        assertTrue(scores.get(0) > scores.get(1), 
-            "For urgent order, MCAA should prefer faster delivery");
+        assertTrue(scores.get(0) > scores.get(1), "For urgent order, MCAA should prefer faster delivery");
     }
 
     @Test
@@ -51,9 +44,7 @@ public class ComplexScenariosTest {
         order.setPriority(3); 
         order.setDeadline(new Date(System.currentTimeMillis() + 72 * 3600 * 1000)); 
         order.setMaxBudget(600); 
-
         List<Proposal> proposals = new ArrayList<>();
-        
         
         Proposal p1 = new Proposal();
         p1.setOrder(order);
@@ -62,7 +53,6 @@ public class ComplexScenariosTest {
         p1.setReliability(0.9);
         proposals.add(p1);
 
-        
         Proposal p2 = new Proposal();
         p2.setOrder(order);
         p2.setPrice(500);
@@ -75,9 +65,7 @@ public class ComplexScenariosTest {
             scores.put(i, MCAA.computeScore(order, proposals.get(i)));
         }
 
-        
-        assertTrue(scores.get(1) > scores.get(0), 
-            "For low budget order, MCAA should prefer cheaper option");
+        assertTrue(scores.get(1) > scores.get(0), "For low budget order, MCAA should prefer cheaper option");
     }
 
     @Test
@@ -86,9 +74,7 @@ public class ComplexScenariosTest {
         order.setOrderId("MULTI-RESOURCE-001");
         order.setPriority(2);
         order.setDeadline(new Date(System.currentTimeMillis() + 36 * 3600 * 1000));
-
         List<Proposal> proposals = new ArrayList<>();
-        
         
         for (int i = 0; i < 5; i++) {
             Proposal p = new Proposal();
@@ -103,11 +89,7 @@ public class ComplexScenariosTest {
         for (int i = 0; i < proposals.size(); i++) {
             scores.put(i, MCAA.computeScore(order, proposals.get(i)));
         }
-
-        
         assertEquals(5, scores.size(), "Should have scores for all proposals");
-        
-        
         for (Double score : scores.values()) {
             assertTrue(score >= 0 && score <= 1, "Score should be between 0 and 1");
         }
@@ -141,8 +123,6 @@ public class ComplexScenariosTest {
             scores.put(i, MCAA.computeScore(order, proposals.get(i)));
         }
 
-        
-        assertTrue(scores.get(0) > scores.get(1), 
-            "For extremely urgent order, MCAA should prefer faster delivery");
+        assertTrue(scores.get(0) > scores.get(1), "For extremely urgent order, MCAA should prefer faster delivery");
     }
 }

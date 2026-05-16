@@ -1,0 +1,61 @@
+{
+  "algorithm_comparison.log": {
+    "test_name": "Algorithm Comparison",
+    "filename": "algorithm_comparison.log",
+    "timestamp": "2026-05-08T16:28:23.576022",
+    "algorithm_performance": {}
+  },
+  "monte_carlo_medium.log": {
+    "test_name": "Monte Carlo Simulation",
+    "filename": "monte_carlo_medium.log",
+    "timestamp": "2026-05-08T16:28:23.576022",
+    "iterations": 100.0
+  },
+  "scenario_extreme_urgency.log": {
+    "test_name": "Scenario: extreme_urgency",
+    "filename": "scenario_extreme_urgency.log",
+    "scenario_type": "extreme_urgency",
+    "timestamp": "2026-05-08T16:28:23.577080",
+    "success_rate": 88.52988622598284
+  },
+  "scenario_high_priority.log": {
+    "test_name": "Scenario: high_priority",
+    "filename": "scenario_high_priority.log",
+    "scenario_type": "high_priority",
+    "timestamp": "2026-05-08T16:28:23.578115",
+    "success_rate": 87.85886927950475
+  },
+  "scenario_low_budget.log": {
+    "test_name": "Scenario: low_budget",
+    "filename": "scenario_low_budget.log",
+    "scenario_type": "low_budget",
+    "timestamp": "2026-05-08T16:28:23.579114",
+    "success_rate": 91.89200764597904
+  },
+  "scenario_multiple_resources.log": {
+    "test_name": "Scenario: multiple_resources",
+    "filename": "scenario_multiple_resources.log",
+    "scenario_type": "multiple_resources",
+    "timestamp": "2026-05-08T16:28:23.579114",
+    "success_rate": 92.00231362103995,
+    "resource_utilization": 85.18283755657153
+  },
+  "test_t01_mcaa.log": {
+    "test_name": "MCAA Scoring",
+    "filename": "test_t01_mcaa.log",
+    "timestamp": "2026-05-08T16:28:23.580619"
+  },
+  "test_t02_contractnet.log": {
+    "test_name": "Contract Net Protocol",
+    "filename": "test_t02_contractnet.log",
+    "timestamp": "2026-05-08T16:28:23.582142",
+    "message_counts": {
+      "CFP": 0,
+      "PROPOSE": 0,
+      "ACCEPT": 0,
+      "REJECT": 0,
+      "INFORM": 0
+    },
+    "protocol_complete": false
+  }
+}

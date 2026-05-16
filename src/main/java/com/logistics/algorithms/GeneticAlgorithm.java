@@ -4,7 +4,6 @@ import com.logistics.ontology.concepts.Order;
 import com.logistics.ontology.predicates.Proposal;
 import java.util.*;
 
-
 public class GeneticAlgorithm {
     private static final int POPULATION_SIZE = 50;
     private static final int GENERATIONS = 100;

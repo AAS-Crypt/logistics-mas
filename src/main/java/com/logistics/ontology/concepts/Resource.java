@@ -12,7 +12,6 @@ public class Resource implements Concept {
 
     public Resource() {}
 
-    
     public String getResourceId() { return resourceId; }
     public void setResourceId(String resourceId) { this.resourceId = resourceId; }
 

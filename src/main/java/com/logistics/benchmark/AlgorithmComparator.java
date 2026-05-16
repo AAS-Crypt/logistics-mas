@@ -6,13 +6,9 @@ import com.logistics.ontology.predicates.Proposal;
 
 import java.util.*;
 
-
 public class AlgorithmComparator {
-
     private static final int NUM_ORDERS = 20;
     private static final int NUM_RESOURCES = 8;
-
-    
     private static class AlgoResult {
         String name;
         double totalCost;
@@ -20,9 +16,7 @@ public class AlgorithmComparator {
         double avgReliability;
         long   execTimeMs;
         double score;            
-
         AlgoResult(String n) { this.name = n; }
-
         double combinedScore() {
             double costScore       = 1.0 / (1.0 + totalCost / 10000);
             double timeScore       = 1.0 / (1.0 + totalTimeHours / 100);
@@ -32,11 +26,9 @@ public class AlgorithmComparator {
     }
 
     public static void main(String[] args) {
-        
         String algorithmsStr = "MCAA,GA,PSO,Random";
         String scenariosStr  = "uncertainty";
         int    iterations    = 20;
-
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
                 case "--algorithms":
@@ -60,95 +52,66 @@ public class AlgorithmComparator {
                     break;
             }
         }
-
         List<String> algorithms = splitAndTrim(algorithmsStr);
         List<String> scenarios  = splitAndTrim(scenariosStr);
-
         System.out.println("=== Algorithm Comparator ===");
         System.out.println("Algorithms : " + String.join(", ", algorithms));
         System.out.println("Scenarios  : " + String.join(", ", scenarios));
         System.out.println("Iterations : " + iterations);
         System.out.println("=============================");
         System.out.println();
-
-        System.out.println("Algorithm Comparator – running with algorithms: "
-                + algorithmsStr + ", scenarios: " + scenariosStr
-                + ", iterations: " + iterations);
+        System.out.println("Algorithm Comparator – running with algorithms: " + algorithmsStr + ", scenarios: " + scenariosStr + ", iterations: " + iterations);
         System.out.println();
-
-        
         for (String scenario : scenarios) {
             System.out.println("---- Scenario: " + scenario + " ----");
             System.out.println("(Orders: " + NUM_ORDERS + ", Resources: " + NUM_RESOURCES + ")");
             System.out.println();
-
-            
             Map<String, List<Double>> algoScores = new LinkedHashMap<>();
             Map<String, List<Long>>   algoTimes  = new LinkedHashMap<>();
             for (String a : algorithms) {
                 algoScores.put(a, new ArrayList<>());
                 algoTimes.put(a, new ArrayList<>());
             }
-
             for (int iter = 0; iter < iterations; iter++) {
-                
                 List<Order>                     orders    = generateOrders(scenario);
                 Map<Integer, List<Proposal>>    proposals = generateProposals(orders, scenario);
-
                 for (String algo : algorithms) {
                     AlgoResult r = runAlgorithm(algo, orders, proposals);
                     algoScores.get(algo).add(r.combinedScore());
                     algoTimes.get(algo).add(r.execTimeMs);
                 }
             }
-
-            
-            System.out.printf("%-16s %8s %8s %8s %8s %10s%n",
-                    "Algorithm", "AvgScore", "Min", "Max", "StdDev", "AvgTimeMs");
+            System.out.printf("%-16s %8s %8s %8s %8s %10s%n", "Algorithm", "AvgScore", "Min", "Max", "StdDev", "AvgTimeMs");
             System.out.println("---------------------------------------------------------");
-
             for (String algo : algorithms) {
                 List<Double> scores = algoScores.get(algo);
                 List<Long>   times  = algoTimes.get(algo);
-
                 double avg   = scores.stream().mapToDouble(d -> d).average().orElse(0);
                 double min   = scores.stream().mapToDouble(d -> d).min().orElse(0);
                 double max   = scores.stream().mapToDouble(d -> d).max().orElse(0);
                 double var   = scores.stream().mapToDouble(s -> Math.pow(s - avg, 2)).average().orElse(0);
                 double stdDev = Math.sqrt(var);
                 double avgMs = times.stream().mapToLong(Long::longValue).average().orElse(0);
-
-                System.out.printf("%-16s %8.4f %8.4f %8.4f %8.4f %10.1f%n",
-                        algo, avg, min, max, stdDev, avgMs);
+                System.out.printf("%-16s %8.4f %8.4f %8.4f %8.4f %10.1f%n", algo, avg, min, max, stdDev, avgMs);
             }
-
-            
             String winner = algoScores.entrySet().stream()
-                    .max(Comparator.comparingDouble(e ->
-                            e.getValue().stream().mapToDouble(Double::doubleValue).average().orElse(0)))
+                    .max(Comparator.comparingDouble(e -> e.getValue().stream().mapToDouble(Double::doubleValue).average().orElse(0)))
                     .map(Map.Entry::getKey).orElse("N/A");
             System.out.println();
             System.out.println("Winner for '" + scenario + "': " + winner);
             System.out.println();
         }
-
         System.out.println("Algorithm comparison finished successfully.");
         System.out.println("Comparison completed.");
     }
-
-    
-    
-    
     private static List<Order> generateOrders(String scenario) {
         List<Order> orders = new ArrayList<>();
         Random rand = new Random(42); 
-
         for (int i = 0; i < NUM_ORDERS; i++) {
             Order o = new Order();
             o.setOrderId("ORD-" + i);
             o.setPriority(1 + rand.nextInt(5));
             o.setMaxBudget(2000 + rand.nextDouble() * 8000);
-            
             long deadlineMs = System.currentTimeMillis() + (long)((24 + rand.nextDouble() * 96) * 3600_000L);
             o.setDeadline(new Date(deadlineMs));
             orders.add(o);
@@ -168,7 +131,6 @@ public class AlgorithmComparator {
                 double price       = 500 + rand.nextDouble() * 1500;
                 double reliability = 0.7 + rand.nextDouble() * 0.3;
                 long   deliveryMs  = System.currentTimeMillis() + (long)((12 + rand.nextDouble() * 36) * 3600_000L);
-
                 p.setPrice(price);
                 p.setReliability(reliability);
                 p.setEstimatedDelivery(new Date(deliveryMs));
@@ -178,13 +140,8 @@ public class AlgorithmComparator {
         }
         return map;
     }
-
     
-    
-    
-    private static AlgoResult runAlgorithm(String algoName,
-                                           List<Order> orders,
-                                           Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runAlgorithm(String algoName, List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         switch (algoName.toUpperCase()) {
             case "MCAA":       return runMCAA(orders, proposals);
             case "GA":         return runGA(orders, proposals);
@@ -201,8 +158,7 @@ public class AlgorithmComparator {
         }
     }
 
-    private static AlgoResult runMCAA(List<Order> orders,
-                                      Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runMCAA(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("MCAA");
         long t0 = System.currentTimeMillis();
         int count = 0;
@@ -229,8 +185,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runGA(List<Order> orders,
-                                    Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runGA(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("GA");
         long t0 = System.currentTimeMillis();
         Map<Integer, Integer> alloc = GeneticAlgorithm.optimize(orders, proposals);
@@ -240,8 +195,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runPSO(List<Order> orders,
-                                     Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runPSO(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("PSO");
         long t0 = System.currentTimeMillis();
         Map<Integer, Integer> alloc = ParticleSwarmOptimization.optimize(orders, proposals);
@@ -251,8 +205,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runSA(List<Order> orders,
-                                    Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runSA(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("SA");
         long t0 = System.currentTimeMillis();
         Map<Integer, Integer> alloc = SimulatedAnnealing.optimize(orders, proposals);
@@ -262,8 +215,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runRoundRobin(List<Order> orders,
-                                            Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runRoundRobin(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("RoundRobin");
         long t0 = System.currentTimeMillis();
         int count = 0;
@@ -286,8 +238,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runRandom(List<Order> orders,
-                                        Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runRandom(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("Random");
         long t0 = System.currentTimeMillis();
         Random rand = new Random();
@@ -309,8 +260,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static AlgoResult runFCFS(List<Order> orders,
-                                      Map<Integer, List<Proposal>> proposals) {
+    private static AlgoResult runFCFS(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
         AlgoResult r = new AlgoResult("FCFS");
         long t0 = System.currentTimeMillis();
         int count = 0;
@@ -333,10 +283,7 @@ public class AlgorithmComparator {
         return r;
     }
 
-    private static void accumulateFromAlloc(AlgoResult r,
-                                            List<Order> orders,
-                                            Map<Integer, List<Proposal>> proposals,
-                                            Map<Integer, Integer> alloc) {
+    private static void accumulateFromAlloc(AlgoResult r, List<Order> orders, Map<Integer, List<Proposal>> proposals, Map<Integer, Integer> alloc) {
         int count = 0;
         for (Map.Entry<Integer, Integer> e : alloc.entrySet()) {
             List<Proposal> plist = proposals.get(e.getKey());
@@ -352,9 +299,6 @@ public class AlgorithmComparator {
         if (count > 0) r.avgReliability /= count;
     }
 
-    
-    
-    
     private static List<String> splitAndTrim(String raw) {
         List<String> result = new ArrayList<>();
         if (raw == null) return result;

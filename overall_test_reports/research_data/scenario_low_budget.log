@@ -1,0 +1,256 @@
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:13:00 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 21.652321013359387 hours
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7991.7155860952425
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 91.89200764597904%
+мая 08, 2026 4:13:01 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 92.83215279642508%
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:14:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 20.73195148538716 hours
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6481.549693060333
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 86.96601842150874%
+мая 08, 2026 4:14:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 95.35896243182816%
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:16:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 24.572507038815097 hours
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5513.012538847059
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 87.48436350221574%
+мая 08, 2026 4:16:28 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 88.14896683223596%
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:18:11 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 20.053289795836616 hours
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6443.26257669942
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 91.26880693198171%
+мая 08, 2026 4:18:12 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 95.73869134696726%
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:19:13 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 41.84271508013397 hours
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6934.754364117936
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 91.1159990565638%
+мая 08, 2026 4:19:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 93.14548789304442%
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:20:23 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 27.994308628844138 hours
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5087.440619125809
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 90.3957324771892%
+мая 08, 2026 4:20:24 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 96.05815181483459%
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:26:52 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 27.33430111208484 hours
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5747.058723153179
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 86.93680533016233%
+мая 08, 2026 4:26:53 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 95.62284812536048%
+мая 08, 2026 4:28:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with limited budget constraints
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing low_budget scenario...
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 low budget orders
+мая 08, 2026 4:28:17 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget multiplier: 0.5
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: low_budget
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 45.75914751208197 hours
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7447.863287303113
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 92.65178973101669%
+мая 08, 2026 4:28:18 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Budget adherence: 96.20150924930783%

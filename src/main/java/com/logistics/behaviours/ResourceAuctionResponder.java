@@ -13,7 +13,6 @@ import com.logistics.ontology.predicates.Proposal;
 import com.logistics.agents.ResourceAgent;
 import com.logistics.util.Logger;
 
-
 public class ResourceAuctionResponder extends ContractNetResponder {
     private Order currentOrder = null;
 
@@ -38,13 +37,10 @@ public class ResourceAuctionResponder extends ContractNetResponder {
             refuse.setContent("Failed to decode CFP");
             return refuse;
         }
-
         boolean canHandle = checkFeasibility(requestedOrder);
         Logger.info(myAgent.getLocalName(), "Can handle order " + (requestedOrder != null ? requestedOrder.getOrderId() : "unknown") + ": " + canHandle);
-
         ACLMessage reply = cfp.createReply();
         if (canHandle) {
-            
             try {
                 Random rand = new Random();
                 int delay = rand.nextInt(20); 
@@ -52,7 +48,6 @@ public class ResourceAuctionResponder extends ContractNetResponder {
             } catch (InterruptedException e) {
                 
             }
-            
             Proposal proposal = createProposal(requestedOrder);
             try {
                 myAgent.getContentManager().fillContent(reply, proposal);
@@ -74,7 +69,6 @@ public class ResourceAuctionResponder extends ContractNetResponder {
     }
 
     private boolean checkFeasibility(Order order) {
-        
         return true;
     }
 
@@ -92,21 +86,12 @@ public class ResourceAuctionResponder extends ContractNetResponder {
     protected ACLMessage handleAcceptProposal(ACLMessage cfp, ACLMessage propose, ACLMessage accept) {
         AID orderAID = accept.getSender();
         Logger.info(myAgent.getLocalName(), "Received ACCEPT_PROPOSAL from: " + orderAID.getLocalName());
-
-        
         ResourceAgent resourceAgent = (ResourceAgent) myAgent;
-        
         if (resourceAgent.wouldCreateConflict(orderAID)) {
-            
             resourceAgent.registerAcceptedOrder(orderAID, currentOrder);
-            
-            
-            
             return null;
         } else {
-            
             resourceAgent.confirmContract(orderAID);
-            
             Logger.info(myAgent.getLocalName(), "Contract confirmed with: " + orderAID.getLocalName());
             ACLMessage inform = accept.createReply();
             inform.setPerformative(ACLMessage.INFORM);

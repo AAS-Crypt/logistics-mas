@@ -1,0 +1,584 @@
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5430,99, Time=27,7h, Success=79,0%, Escalations=1,6
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5094,45, Time=26,2h, Success=78,4%, Escalations=1,6
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5289,41, Time=25,0h, Success=84,5%, Escalations=1,8
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4825,09, Time=24,5h, Success=84,3%, Escalations=1,4
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4951,38, Time=22,0h, Success=86,0%, Escalations=1,8
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5027,28, Time=23,0h, Success=83,2%, Escalations=1,8
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5476,28, Time=23,9h, Success=82,9%, Escalations=1,4
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5263,38, Time=26,6h, Success=79,9%, Escalations=1,2
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5307,24, Time=27,0h, Success=79,3%, Escalations=1,6
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5430,99,27,7,0,790,1,6
+0,20,5094,45,26,2,0,784,1,6
+0,30,5289,41,25,0,0,845,1,8
+0,40,4825,09,24,5,0,843,1,4
+0,50,4951,38,22,0,0,860,1,8
+0,60,5027,28,23,0,0,832,1,8
+0,70,5476,28,23,9,0,829,1,4
+0,80,5263,38,26,6,0,799,1,2
+0,90,5307,24,27,0,0,793,1,6
+
+мая 08, 2026 4:13:06 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5295,66, Time=25,4h, Success=80,2%, Escalations=1,6
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5081,95, Time=26,5h, Success=79,9%, Escalations=1,6
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5008,28, Time=24,9h, Success=82,2%, Escalations=1,6
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5277,88, Time=23,8h, Success=84,2%, Escalations=1,4
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4838,71, Time=25,2h, Success=87,6%, Escalations=1,6
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5089,72, Time=26,6h, Success=82,7%, Escalations=1,6
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5267,78, Time=27,0h, Success=84,2%, Escalations=1,4
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5131,16, Time=24,1h, Success=80,6%, Escalations=1,8
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5268,19, Time=26,0h, Success=80,8%, Escalations=2,0
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5295,66,25,4,0,802,1,6
+0,20,5081,95,26,5,0,799,1,6
+0,30,5008,28,24,9,0,822,1,6
+0,40,5277,88,23,8,0,842,1,4
+0,50,4838,71,25,2,0,876,1,6
+0,60,5089,72,26,6,0,827,1,6
+0,70,5267,78,27,0,0,842,1,4
+0,80,5131,16,24,1,0,806,1,8
+0,90,5268,19,26,0,0,808,2,0
+
+мая 08, 2026 4:14:08 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5376,99, Time=28,4h, Success=77,3%, Escalations=1,2
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5283,69, Time=24,9h, Success=78,7%, Escalations=1,4
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4944,41, Time=25,3h, Success=83,1%, Escalations=1,6
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5223,87, Time=24,4h, Success=81,6%, Escalations=1,4
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5199,61, Time=24,8h, Success=84,0%, Escalations=1,6
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5144,97, Time=26,2h, Success=83,7%, Escalations=1,6
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5379,33, Time=23,8h, Success=82,0%, Escalations=1,4
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5007,79, Time=25,0h, Success=80,6%, Escalations=1,8
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5341,67, Time=26,2h, Success=78,6%, Escalations=1,4
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5376,99,28,4,0,773,1,2
+0,20,5283,69,24,9,0,787,1,4
+0,30,4944,41,25,3,0,831,1,6
+0,40,5223,87,24,4,0,816,1,4
+0,50,5199,61,24,8,0,840,1,6
+0,60,5144,97,26,2,0,837,1,6
+0,70,5379,33,23,8,0,820,1,4
+0,80,5007,79,25,0,0,806,1,8
+0,90,5341,67,26,2,0,786,1,4
+
+мая 08, 2026 4:16:32 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5381,55, Time=24,4h, Success=77,2%, Escalations=1,6
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5040,24, Time=22,7h, Success=80,6%, Escalations=1,6
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5051,15, Time=24,0h, Success=83,8%, Escalations=1,6
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4921,31, Time=25,3h, Success=86,2%, Escalations=1,4
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4904,84, Time=23,4h, Success=84,1%, Escalations=1,8
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5223,64, Time=23,3h, Success=83,5%, Escalations=1,6
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5208,41, Time=24,5h, Success=81,7%, Escalations=1,4
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5282,67, Time=27,4h, Success=80,3%, Escalations=1,6
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5331,58, Time=27,1h, Success=79,2%, Escalations=1,6
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5381,55,24,4,0,772,1,6
+0,20,5040,24,22,7,0,806,1,6
+0,30,5051,15,24,0,0,838,1,6
+0,40,4921,31,25,3,0,862,1,4
+0,50,4904,84,23,4,0,841,1,8
+0,60,5223,64,23,3,0,835,1,6
+0,70,5208,41,24,5,0,817,1,4
+0,80,5282,67,27,4,0,803,1,6
+0,90,5331,58,27,1,0,792,1,6
+
+мая 08, 2026 4:18:17 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5362,03, Time=28,0h, Success=80,6%, Escalations=1,8
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5045,62, Time=24,2h, Success=80,7%, Escalations=1,6
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5120,60, Time=25,3h, Success=80,0%, Escalations=1,4
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5151,17, Time=24,8h, Success=81,9%, Escalations=1,6
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5195,03, Time=23,5h, Success=85,3%, Escalations=1,8
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4733,07, Time=26,0h, Success=84,8%, Escalations=1,4
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5331,12, Time=26,0h, Success=80,5%, Escalations=2,0
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5151,90, Time=25,1h, Success=78,5%, Escalations=2,0
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5248,43, Time=25,2h, Success=75,1%, Escalations=1,6
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5362,03,28,0,0,806,1,8
+0,20,5045,62,24,2,0,807,1,6
+0,30,5120,60,25,3,0,800,1,4
+0,40,5151,17,24,8,0,819,1,6
+0,50,5195,03,23,5,0,853,1,8
+0,60,4733,07,26,0,0,848,1,4
+0,70,5331,12,26,0,0,805,2,0
+0,80,5151,90,25,1,0,785,2,0
+0,90,5248,43,25,2,0,751,1,6
+
+мая 08, 2026 4:19:18 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5493,78, Time=26,3h, Success=76,6%, Escalations=1,6
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5241,22, Time=27,2h, Success=80,4%, Escalations=1,4
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5233,62, Time=27,0h, Success=83,3%, Escalations=1,4
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5059,88, Time=27,6h, Success=81,5%, Escalations=1,4
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5022,79, Time=24,3h, Success=84,3%, Escalations=2,0
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5054,51, Time=25,7h, Success=84,5%, Escalations=1,6
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5084,13, Time=26,0h, Success=81,3%, Escalations=1,6
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5417,36, Time=23,5h, Success=79,7%, Escalations=1,8
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5496,12, Time=26,3h, Success=79,3%, Escalations=1,4
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5493,78,26,3,0,766,1,6
+0,20,5241,22,27,2,0,804,1,4
+0,30,5233,62,27,0,0,833,1,4
+0,40,5059,88,27,6,0,815,1,4
+0,50,5022,79,24,3,0,843,2,0
+0,60,5054,51,25,7,0,845,1,6
+0,70,5084,13,26,0,0,813,1,6
+0,80,5417,36,23,5,0,797,1,8
+0,90,5496,12,26,3,0,793,1,4
+
+мая 08, 2026 4:20:29 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5422,71, Time=28,5h, Success=78,3%, Escalations=1,6
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5206,98, Time=26,6h, Success=80,0%, Escalations=2,0
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5193,91, Time=25,9h, Success=80,7%, Escalations=1,4
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5024,19, Time=22,9h, Success=84,0%, Escalations=1,6
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4841,97, Time=24,9h, Success=87,0%, Escalations=1,4
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5098,95, Time=23,1h, Success=82,5%, Escalations=1,8
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5107,12, Time=27,1h, Success=82,7%, Escalations=1,2
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5339,14, Time=23,2h, Success=79,0%, Escalations=1,8
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5393,66, Time=24,2h, Success=79,3%, Escalations=1,4
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5422,71,28,5,0,783,1,6
+0,20,5206,98,26,6,0,800,2,0
+0,30,5193,91,25,9,0,807,1,4
+0,40,5024,19,22,9,0,840,1,6
+0,50,4841,97,24,9,0,870,1,4
+0,60,5098,95,23,1,0,825,1,8
+0,70,5107,12,27,1,0,827,1,2
+0,80,5339,14,23,2,0,790,1,8
+0,90,5393,66,24,2,0,793,1,4
+
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Starting sensitivity analysis...
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Scenarios per value: 5
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Running sensitivity analysis for mcaa_time_weight...
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing values from 0.1 to 0.9 with step 0.1
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,10
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5067,26, Time=26,6h, Success=78,3%, Escalations=1,8
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,20
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5337,14, Time=25,2h, Success=80,7%, Escalations=2,0
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,30
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4981,95, Time=25,1h, Success=82,1%, Escalations=1,6
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,40
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$4923,76, Time=25,6h, Success=82,0%, Escalations=1,4
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,50
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5022,66, Time=23,1h, Success=84,3%, Escalations=1,6
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,60
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5080,46, Time=25,6h, Success=82,7%, Escalations=1,8
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,70
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5059,93, Time=22,8h, Success=82,4%, Escalations=1,6
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,80
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5221,39, Time=27,7h, Success=79,8%, Escalations=1,6
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Testing mcaa_time_weight = 0,90
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer]   Results: Cost=$5410,72, Time=24,7h, Success=75,3%, Escalations=1,8
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] === Sensitivity Analysis Summary ===
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter: mcaa_time_weight
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Range: 0.1:0.9:0.1
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Optimal value based on combined metrics: 0,50
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] 
+CSV Results:
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Parameter Value,Avg Cost,Avg Time,Success Rate,Escalations
+0,10,5067,26,26,6,0,783,1,8
+0,20,5337,14,25,2,0,807,2,0
+0,30,4981,95,25,1,0,821,1,6
+0,40,4923,76,25,6,0,820,1,4
+0,50,5022,66,23,1,0,843,1,6
+0,60,5080,46,25,6,0,827,1,8
+0,70,5059,93,22,8,0,824,1,6
+0,80,5221,39,27,7,0,798,1,6
+0,90,5410,72,24,7,0,753,1,8
+
+мая 08, 2026 4:28:22 PM com.logistics.util.Logger info
+INFO: [SensitivityAnalyzer] Sensitivity analysis complete.

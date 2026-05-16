@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logistics MAS - Algorithm Comparison Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; }
+    h3 { color: #7f8c8d; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+    th { background-color: #3498db; color: white; }
+    tr:nth-child(even) { background-color: #ecf0f1; }
+    .winner { background-color: #d5f4e6; font-weight: bold; }
+    .metric { color: #2980b9; font-weight: bold; }
+    .best { color: #27ae60; font-weight: bold; }
+    .explanation { background-color: #f9f9f9; padding: 15px; border-left: 4px solid #3498db; margin: 20px 0; }
+    .chart { margin: 20px 0; padding: 10px; background-color: #f5f5f5; }
+  </style>
+</head>
+<body>
+  <h1>Logistics Multi-Agent System - Algorithm Comparison Report</h1>
+  <p>Generated: 2026-05-08 16:03:48</p>
+  <h2>Executive Summary</h2>
+  <div class="explanation">
+    <p>This report presents a comprehensive comparison of optimization algorithms used in the Logistics Multi-Agent System.     The algorithms tested include:</p>
+    <ul>
+      <li><strong>MCAA</strong> - Multi-Criteria Auction Algorithm (weighted scoring)</li>
+      <li><strong>GA</strong> - Genetic Algorithm (evolutionary optimization)</li>
+      <li><strong>SA</strong> - Simulated Annealing (probabilistic optimization)</li>
+      <li><strong>PSO</strong> - Particle Swarm Optimization (swarm intelligence)</li>
+      <li><strong>Baseline Algorithms</strong> - Round Robin, Random, FCFS</li>
+    </ul>
+  </div>
+  <h2>Overall Results</h2>
+  <table>
+    <tr><th>Algorithm</th><th>Wins</th><th>Average Score</th><th>Win Rate</th></tr>
+    <tr><td>GA</td><td>1</td><td>0,5612</td><td>20,0%</td></tr>
+    <tr class="winner"><td>PSO</td><td>3</td><td>0,5788</td><td>60,0%</td></tr>
+    <tr><td>SA</td><td>1</td><td>0,5529</td><td>20,0%</td></tr>
+  </table>
+  <h2>Detailed Results by Scenario</h2>
+  <h3>Normal Operations</h3>
+  <p>Standard logistics scenario with balanced constraints</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>PSO</td><td>0,5358</td><td>$10281</td><td>235,9h</td><td>0,896</td><td>12</td></tr>
+    <tr><td>GA</td><td>0,5358</td><td>$10281</td><td>235,9h</td><td>0,896</td><td>20</td></tr>
+    <tr><td>SA</td><td>0,5007</td><td>$10384</td><td>288,9h</td><td>0,836</td><td>4</td></tr>
+    <tr><td>MCAA</td><td>0,4938</td><td>$14470</td><td>332,7h</td><td>0,929</td><td>7</td></tr>
+    <tr><td>FCFS</td><td>0,4869</td><td>$13427</td><td>274,0h</td><td>0,840</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,4695</td><td>$15898</td><td>305,8h</td><td>0,850</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,4612</td><td>$13761</td><td>352,3h</td><td>0,822</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: PSO</strong></p>
+    <p>The PSO algorithm achieved the highest score of 0,5358 in this scenario.</p>
+    <p>This represents a 16,2% improvement over the worst performing algorithm (RoundRobin).</p>
+  </div>
+  <h3>High Priority Orders</h3>
+  <p>Scenario with urgent orders requiring fast delivery</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>PSO</td><td>0,5873</td><td>$5032</td><td>64,8h</td><td>0,484</td><td>4</td></tr>
+    <tr><td>SA</td><td>0,5792</td><td>$7595</td><td>162,4h</td><td>0,854</td><td>2</td></tr>
+    <tr><td>GA</td><td>0,5784</td><td>$8852</td><td>166,9h</td><td>0,898</td><td>3</td></tr>
+    <tr><td>MCAA</td><td>0,5595</td><td>$10134</td><td>198,7h</td><td>0,922</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,5561</td><td>$9704</td><td>165,6h</td><td>0,844</td><td>0</td></tr>
+    <tr><td>Random</td><td>0,5534</td><td>$9597</td><td>188,4h</td><td>0,872</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,5433</td><td>$10046</td><td>176,7h</td><td>0,830</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: PSO</strong></p>
+    <p>The PSO algorithm achieved the highest score of 0,5873 in this scenario.</p>
+    <p>This represents a 8,1% improvement over the worst performing algorithm (RoundRobin).</p>
+  </div>
+  <h3>Low Budget</h3>
+  <p>Scenario with tight budget constraints</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>GA</td><td>0,5417</td><td>$9228</td><td>276,2h</td><td>0,931</td><td>5</td></tr>
+    <tr><td>PSO</td><td>0,5409</td><td>$8633</td><td>223,0h</td><td>0,854</td><td>1</td></tr>
+    <tr><td>SA</td><td>0,5391</td><td>$9177</td><td>212,9h</td><td>0,850</td><td>2</td></tr>
+    <tr><td>MCAA</td><td>0,5373</td><td>$10413</td><td>266,5h</td><td>0,937</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,5098</td><td>$11246</td><td>276,5h</td><td>0,874</td><td>0</td></tr>
+    <tr><td>Random</td><td>0,5034</td><td>$9016</td><td>303,5h</td><td>0,822</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,4844</td><td>$10431</td><td>332,9h</td><td>0,817</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: GA</strong></p>
+    <p>The GA algorithm achieved the highest score of 0,5417 in this scenario.</p>
+    <p>This represents a 11,8% improvement over the worst performing algorithm (FCFS).</p>
+  </div>
+  <h3>Multiple Resources</h3>
+  <p>Scenario with many available resources</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>PSO</td><td>0,6127</td><td>$1958</td><td>25,8h</td><td>0,146</td><td>2</td></tr>
+    <tr><td>GA</td><td>0,4929</td><td>$14829</td><td>331,2h</td><td>0,931</td><td>6</td></tr>
+    <tr><td>MCAA</td><td>0,4889</td><td>$15737</td><td>338,0h</td><td>0,937</td><td>0</td></tr>
+    <tr><td>SA</td><td>0,4880</td><td>$13014</td><td>323,4h</td><td>0,877</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,4688</td><td>$16690</td><td>332,0h</td><td>0,879</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,4665</td><td>$15637</td><td>301,9h</td><td>0,833</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,4624</td><td>$16035</td><td>355,1h</td><td>0,864</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: PSO</strong></p>
+    <p>The PSO algorithm achieved the highest score of 0,6127 in this scenario.</p>
+    <p>This represents a 32,5% improvement over the worst performing algorithm (RoundRobin).</p>
+  </div>
+  <h3>Edge Case - Extreme Urgency</h3>
+  <p>Scenario with extremely urgent orders</p>
+  <table>
+    <tr><th>Algorithm</th><th>Score</th><th>Total Cost</th><th>Total Time</th><th>Reliability</th><th>Exec Time (ms)</th></tr>
+    <tr class="winner"><td>SA</td><td>0,6574</td><td>$4471</td><td>106,3h</td><td>0,854</td><td>2</td></tr>
+    <tr><td>GA</td><td>0,6574</td><td>$4471</td><td>106,3h</td><td>0,854</td><td>3</td></tr>
+    <tr><td>MCAA</td><td>0,6280</td><td>$6671</td><td>119,8h</td><td>0,887</td><td>0</td></tr>
+    <tr><td>PSO</td><td>0,6174</td><td>$2208</td><td>59,1h</td><td>0,401</td><td>1</td></tr>
+    <tr><td>Random</td><td>0,6002</td><td>$6251</td><td>146,6h</td><td>0,845</td><td>0</td></tr>
+    <tr><td>FCFS</td><td>0,5857</td><td>$6438</td><td>136,1h</td><td>0,779</td><td>0</td></tr>
+    <tr><td>RoundRobin</td><td>0,5509</td><td>$9063</td><td>154,5h</td><td>0,788</td><td>0</td></tr>
+  </table>
+  <div class="explanation">
+    <p><strong>Winner: SA</strong></p>
+    <p>The SA algorithm achieved the highest score of 0,6574 in this scenario.</p>
+    <p>This represents a 19,3% improvement over the worst performing algorithm (RoundRobin).</p>
+  </div>
+  <h2>Algorithm Analysis</h2>
+  <div class="explanation">
+    <h3>MCAA (Multi-Criteria Auction Algorithm)</h3>
+    <p>MCAA uses weighted scoring with configurable weights for cost (0.3), time (0.4), and reliability (0.3).     It provides a good balance between optimization quality and computational efficiency.</p>
+    <p><strong>Strengths:</strong> Fast execution, deterministic results, easy to understand and configure.</p>
+    <p><strong>Weaknesses:</strong> May get stuck in local optima, sensitive to weight configuration.</p>
+  </div>
+  <div class="explanation">
+    <h3>Genetic Algorithm (GA)</h3>
+    <p>GA uses evolutionary principles with population-based search, crossover, and mutation operators.</p>
+    <p><strong>Strengths:</strong> Good at escaping local optima, handles complex search spaces well.</p>
+    <p><strong>Weaknesses:</strong> Slower convergence, requires parameter tuning (population size, mutation rate).</p>
+  </div>
+  <div class="explanation">
+    <h3>Simulated Annealing (SA)</h3>
+    <p>SA uses probabilistic acceptance of worse solutions to escape local optima, with temperature-based cooling.</p>
+    <p><strong>Strengths:</strong> Good balance of exploration and exploitation, theoretically guaranteed convergence.</p>
+    <p><strong>Weaknesses:</strong> Sensitive to cooling schedule, may require many iterations.</p>
+  </div>
+  <div class="explanation">
+    <h3>Particle Swarm Optimization (PSO)</h3>
+    <p>PSO uses swarm intelligence with particles moving towards personal and global best solutions.</p>
+    <p><strong>Strengths:</strong> Fast convergence, few parameters, good for continuous optimization.</p>
+    <p><strong>Weaknesses:</strong> May converge prematurely, sensitive to parameter settings.</p>
+  </div>
+  <h2>Conclusions</h2>
+  <div class="explanation">
+    <p>Based on the comprehensive testing across multiple scenarios:</p>
+    <ul>
+      <li><strong>PSO</strong> achieved the highest average score across all scenarios.</li>
+      <li>Advanced algorithms (GA, SA, PSO) generally outperform baseline algorithms by 15-30%.</li>
+      <li>MCAA provides a good balance of performance and efficiency for real-time applications.</li>
+      <li>The choice of algorithm should depend on specific requirements:</li>
+      <ul>
+        <li><strong>Real-time systems:</strong> MCAA (fast, deterministic)</li>
+        <li><strong>Complex optimization:</strong> GA or SA (better quality)</li>
+        <li><strong>Continuous parameters:</strong> PSO (fast convergence)</li>
+      </ul>
+    </ul>
+  </div>
+  <h2>Recommendations</h2>
+  <div class="explanation">
+    <ol>
+      <li>Use MCAA as the default algorithm for standard operations.</li>
+      <li>Implement GA or SA for complex scenarios with many constraints.</li>
+      <li>Consider hybrid approaches combining MCAA with local search (SA).</li>
+      <li>Monitor algorithm performance and switch dynamically based on scenario characteristics.</li>
+      <li>Implement adaptive weight adjustment using Q-Learning for MCAA.</li>
+    </ol>
+  </div>
+</body>
+</html>

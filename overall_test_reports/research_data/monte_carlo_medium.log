@@ -1,0 +1,400 @@
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6427,13
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 36,1 hours
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 89,7%
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,3
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4537,55 to $8316,70
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 22,0 to 50,3 hours
+мая 08, 2026 4:13:05 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6420,37
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 35,9 hours
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 89,4%
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,5
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4532,78 to $8307,95
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 21,8 to 50,0 hours
+мая 08, 2026 4:14:07 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6505,90
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 36,6 hours
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 89,9%
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,8
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4593,16 to $8418,63
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 22,3 to 51,0 hours
+мая 08, 2026 4:16:31 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6619,81
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 35,9 hours
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 90,6%
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,6
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4673,58 to $8566,03
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 21,8 to 49,9 hours
+мая 08, 2026 4:18:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6449,48
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 35,6 hours
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 90,2%
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,4
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4553,33 to $8345,62
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 21,6 to 49,5 hours
+мая 08, 2026 4:19:17 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6543,31
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 34,8 hours
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 90,2%
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,6
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4619,58 to $8467,05
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 21,2 to 48,5 hours
+мая 08, 2026 4:20:28 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:26:56 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6402,51
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 36,6 hours
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 90,2%
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,5
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4520,17 to $8284,84
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 22,2 to 50,9 hours
+мая 08, 2026 4:26:57 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Starting Monte Carlo simulation...
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Running 100 iterations with medium uncertainty...
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 1/100
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 11/100
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 21/100
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 31/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 41/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 51/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 61/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 71/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 81/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Completed iteration 91/100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] === Monte Carlo Results ===
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Iterations: 100
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Uncertainty level: medium
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average cost: $6532,77
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average delivery time: 36,1 hours
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average success rate: 90,0%
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Average escalations per run: 1,6
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] 95% confidence intervals:
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Cost: $4612,14 to $8453,41
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator]   Time: 22,0 to 50,3 hours
+мая 08, 2026 4:28:21 PM com.logistics.util.Logger info
+INFO: [MonteCarloSimulator] Monte Carlo simulation complete.

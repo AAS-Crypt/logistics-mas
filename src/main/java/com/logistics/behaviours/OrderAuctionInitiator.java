@@ -37,7 +37,6 @@ public class OrderAuctionInitiator extends ContractNetInitiator {
         cfp.setProtocol(FIPANames.InteractionProtocol.FIPA_CONTRACT_NET);
         cfp.setLanguage(new SLCodec().getName());
         cfp.setOntology(LogisticsOntology.getInstance().getName());
-
         CallForProposal cfpContent = new CallForProposal(order);
         try {
             agent.getContentManager().fillContent(cfp, cfpContent);
@@ -46,17 +45,14 @@ public class OrderAuctionInitiator extends ContractNetInitiator {
             Logger.error(agent.getLocalName(), "Failed to fill CFP content", ex);
             ex.printStackTrace();
         }
-        
         cfp.setReplyByDate(new Date(System.currentTimeMillis() + 30000)); 
-        
         int receiverCount = 0;
         jade.util.leap.Iterator it = cfp.getAllReceiver();
         while (it.hasNext()) {
             it.next();
             receiverCount++;
         }
-        Logger.info(agent.getLocalName(), "CFP created with reply deadline: " + cfp.getReplyByDate() + 
-                   ", receivers: " + receiverCount);
+        Logger.info(agent.getLocalName(), "CFP created with reply deadline: " + cfp.getReplyByDate() + ", receivers: " + receiverCount);
         return cfp;
     }
 

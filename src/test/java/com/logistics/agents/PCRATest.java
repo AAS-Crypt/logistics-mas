@@ -12,10 +12,8 @@ public class PCRATest {
         int numResources = 2;
         int numOrders = 5;
         int numScenarios = 100;
-        
         List<Map<String, Double>> scenarios = new ArrayList<>();
         Random rand = new Random(42);
-        
         for (int i = 0; i < numScenarios; i++) {
             Map<String, Double> scenario = new HashMap<>();
             for (int r = 0; r < numResources; r++) {
@@ -36,10 +34,8 @@ public class PCRATest {
         
         List<Map.Entry<Integer, Double>> sorted = new ArrayList<>(avgDemand.entrySet());
         sorted.sort(Map.Entry.comparingByValue());
-        
         Map<Integer, List<Integer>> assignments = new HashMap<>();
         int orderIndex = 0;
-        
         while (orderIndex < numOrders) {
             for (Map.Entry<Integer, Double> entry : sorted) {
                 if (orderIndex < numOrders) {
@@ -48,9 +44,7 @@ public class PCRATest {
                 }
             }
         }
-        
         assertFalse(assignments.isEmpty(), "Should produce assignments");
-        assertEquals(numOrders, assignments.values().stream().mapToInt(List::size).sum(), 
-            "All orders should be assigned");
+        assertEquals(numOrders, assignments.values().stream().mapToInt(List::size).sum(), "All orders should be assigned");
     }
 }

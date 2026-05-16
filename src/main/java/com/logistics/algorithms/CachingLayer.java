@@ -2,10 +2,8 @@ package com.logistics.algorithms;
 
 import java.util.*;
 
-
 public class CachingLayer {
     
-     
     private static class CacheEntry {
         private Object value;
         private long timestamp;
@@ -22,15 +20,12 @@ public class CachingLayer {
         public boolean isExpired() {
             return System.currentTimeMillis() - timestamp > ttl;
         }
-        
         public void access() {
             accessCount++;
         }
-        
         public Object getValue() {
             return value;
         }
-        
         public int getAccessCount() {
             return accessCount;
         }
@@ -66,11 +61,9 @@ public class CachingLayer {
         return entry.getValue();
     }
     
-     
     public void put(String key, Object value) {
         put(key, value, defaultTTL);
     }
-    
      
     public void put(String key, Object value, long ttl) {
         if (cache.size() >= maxSize) {
@@ -78,7 +71,6 @@ public class CachingLayer {
         }
         cache.put(key, new CacheEntry(value, ttl));
     }
-    
      
     private void evictLRU() {
         String lruKey = null;
@@ -95,7 +87,6 @@ public class CachingLayer {
             cache.remove(lruKey);
         }
     }
-    
      
     private void evictLFU() {
         String lfuKey = null;
@@ -111,17 +102,14 @@ public class CachingLayer {
         }
     }
     
-     
     public void remove(String key) {
         cache.remove(key);
     }
-    
      
     public void clear() {
         cache.clear();
     }
     
-     
     public Map<String, Object> getStatistics() {
         Map<String, Object> stats = new HashMap<>();
         stats.put("size", cache.size());
@@ -138,28 +126,23 @@ public class CachingLayer {
         stats.put("expired_entries", expired);
         return stats;
     }
-    
      
     public boolean containsKey(String key) {
         CacheEntry entry = cache.get(key);
         return entry != null && !entry.isExpired();
     }
     
-     
     public Set<String> getKeys() {
         return cache.keySet();
     }
     
-     
     public void clearExpired() {
         List<String> expiredKeys = new ArrayList<>();
-        
         for (Map.Entry<String, CacheEntry> entry : cache.entrySet()) {
             if (entry.getValue().isExpired()) {
                 expiredKeys.add(entry.getKey());
             }
         }
-        
         for (String key : expiredKeys) {
             cache.remove(key);
         }

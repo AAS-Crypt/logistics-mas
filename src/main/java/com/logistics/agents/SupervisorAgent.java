@@ -17,7 +17,6 @@ import com.logistics.util.Logger;
 import com.logistics.config.ConfigLoader;
 import java.util.*;
 
-
 public class SupervisorAgent extends Agent {
     private Map<AID, Map<String, Double>> managerKPIs = new HashMap<>();
     private long sptaIntervalMs;
@@ -146,28 +145,24 @@ public class SupervisorAgent extends Agent {
         return analysis;
     }
 
-     
     private Map<String, Double> generatePolicyUpdates(Map<String, Double> analysis) {
         Map<String, Double> newPolicy = new HashMap<>(currentPolicy);
 
         if (analysis.isEmpty()) {
             return newPolicy;
         }
-        
         Double avgCost = analysis.get("avg_cost");
         if (avgCost != null && avgCost > 1000) {
             double newCostWeight = Math.min(0.5, currentPolicy.get("mcaa.weight.cost") + 0.05);
             newPolicy.put("mcaa.weight.cost", newCostWeight);
             Logger.info(getLocalName(), "SPTA: Increasing cost weight to " + newCostWeight);
         }
-        
         Double avgDeliveryTime = analysis.get("avg_delivery_time");
         if (avgDeliveryTime != null && avgDeliveryTime > 24) {
             double newTimeWeight = Math.min(0.6, currentPolicy.get("mcaa.weight.time") + 0.05);
             newPolicy.put("mcaa.weight.time", newTimeWeight);
             Logger.info(getLocalName(), "SPTA: Increasing time weight to " + newTimeWeight);
         }
-        
         double sum = newPolicy.values().stream().mapToDouble(Double::doubleValue).sum();
         if (sum > 0) {
             for (Map.Entry<String, Double> entry : newPolicy.entrySet()) {
@@ -177,7 +172,6 @@ public class SupervisorAgent extends Agent {
         currentPolicy = newPolicy;
         return newPolicy;
     }
-
      
     private void distributePolicyUpdates(Map<String, Double> newPolicy) {
         Logger.info(getLocalName(), "SPTA: Distributing policy updates to managers...");
@@ -199,7 +193,6 @@ public class SupervisorAgent extends Agent {
             Logger.error(getLocalName(), "SPTA: Failed to distribute policy updates", e);
         }
     }
-
      
     private void sendPolicyUpdate(AID manager, String policy) {
         ACLMessage inform = new ACLMessage(ACLMessage.INFORM);

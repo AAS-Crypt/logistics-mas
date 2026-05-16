@@ -5,7 +5,6 @@ import com.logistics.ontology.predicates.Proposal;
 import jade.core.AID;
 import java.util.*;
 
-
 public class FCFSAllocator {
     public static int selectProposal(List<Proposal> proposals) {
         if (proposals == null || proposals.isEmpty()) {

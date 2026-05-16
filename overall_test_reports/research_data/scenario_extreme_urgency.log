@@ -1,0 +1,256 @@
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:13:03 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 38.107382443428605 hours
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5297.887847336866
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 88.52988622598284%
+мая 08, 2026 4:13:04 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 81.08133212744565%
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:14:05 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 39.94703757467232 hours
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5392.504046385256
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 85.9139022076383%
+мая 08, 2026 4:14:06 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 84.55966149562109%
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:16:29 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 35.1684467425582 hours
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7709.0154419321425
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 87.60016635492885%
+мая 08, 2026 4:16:30 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 73.95492449673654%
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:18:14 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 39.46251755694189 hours
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5159.325977755745
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 94.2726975706296%
+мая 08, 2026 4:18:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 74.6575291469999%
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:19:15 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 24.80764366378661 hours
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $5130.858770929453
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 94.04126379830019%
+мая 08, 2026 4:19:16 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 77.55134860291184%
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:20:26 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 41.61310927551678 hours
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7087.157194552186
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 86.07222331378875%
+мая 08, 2026 4:20:27 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 81.0981519637876%
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:26:54 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 40.17271034134693 hours
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $7969.34935723023
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 86.71201165431773%
+мая 08, 2026 4:26:55 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 73.00076315545289%
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Starting scenario runner...
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Description: Orders with extremely tight deadlines
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Parameters: orders=10, resources=3
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Executing extreme_urgency scenario...
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Creating 10 extremely urgent orders
+мая 08, 2026 4:28:19 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Deadline multiplier: 0.1
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario execution complete.
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] === Scenario Results ===
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Scenario: extreme_urgency
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Orders processed: 10
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Resources available: 3
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average completion time: 46.39750492603275 hours
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Average cost: $6287.784317833106
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Success rate: 93.35774971977366%
+мая 08, 2026 4:28:20 PM com.logistics.util.Logger info
+INFO: [ScenarioRunner] Urgent orders completed: 80.35797237245333%

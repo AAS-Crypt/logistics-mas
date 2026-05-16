@@ -63,11 +63,9 @@ public class OrderAgent extends Agent {
         });
     }
 
-     
     private void searchForResourcesWithRetry() {
         searchForResourcesWithRetry(0); 
     }
-
      
     private void searchForResourcesWithRetry(int minExpectedResources) {
         if (auctionStarted) {
@@ -143,7 +141,6 @@ public class OrderAgent extends Agent {
         order.setMaxBudget(300000);
         return order;
     }
-    
     public double getUtilityIfWin() {
         
         long now = System.currentTimeMillis();
@@ -151,8 +148,6 @@ public class OrderAgent extends Agent {
         if (timeToDeadline <= 0) return -1000; 
         return (1.0 / currentOrder.getPriority()) * (1.0 / (timeToDeadline / 3600000.0 + 1));
     }
-
-    
     public double getUtilityIfLose() {
         return -50.0; 
     }

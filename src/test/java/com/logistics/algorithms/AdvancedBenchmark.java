@@ -6,7 +6,6 @@ import com.logistics.ontology.concepts.Order;
 import com.logistics.ontology.predicates.Proposal;
 import java.util.*;
 
-
 public class AdvancedBenchmark {
 
     @Test

@@ -33,7 +33,6 @@ public class AnomalyDetector {
             sum += v;
         }
         mean = sum / history.size();
-        
         double sumSquaredDiff = 0;
         for (double v : history) {
             sumSquaredDiff += Math.pow(v - mean, 2);
@@ -69,7 +68,6 @@ public class AnomalyDetector {
                 anomalyIndices.add(i);
             }
         }
-        
         return anomalyIndices;
     }
 

@@ -3,30 +3,19 @@ package com.logistics.test.data;
 import com.logistics.ontology.concepts.Location;
 import java.util.*;
 
-
 public class RealWorldTestData {
-    
-    
     public static final Map<String, Location> CITIES = new HashMap<>();
-    
-    
     public static final Map<String, Map<String, Double>> DISTANCES = new HashMap<>();
-    
-    
     public static final List<String> WAREHOUSES = Arrays.asList(
         "Chicago", "Los Angeles", "Dallas", "Atlanta", "Seattle"
     );
-    
-    
     public static final List<String> CUSTOMER_LOCATIONS = Arrays.asList(
         "New York", "Los Angeles", "Chicago", "Houston", "Phoenix",
         "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose",
         "Austin", "Jacksonville", "Fort Worth", "Columbus", "Charlotte",
         "Seattle", "Denver", "Boston", "Nashville", "Portland"
     );
-    
     static {
-        
         CITIES.put("New York", createLocation("New York", 40.7128, -74.0060));
         CITIES.put("Los Angeles", createLocation("Los Angeles", 34.0522, -118.2437));
         CITIES.put("Chicago", createLocation("Chicago", 41.8781, -87.6298));
@@ -48,13 +37,10 @@ public class RealWorldTestData {
         CITIES.put("Nashville", createLocation("Nashville", 36.1627, -86.7816));
         CITIES.put("Portland", createLocation("Portland", 45.5152, -122.6784));
         CITIES.put("Atlanta", createLocation("Atlanta", 33.7490, -84.3880));
-        
-        
         initializeDistances();
     }
     
     private static void initializeDistances() {
-        
         Map<String, Double> fromChicago = new HashMap<>();
         fromChicago.put("New York", 1260.0);
         fromChicago.put("Los Angeles", 2800.0);
@@ -78,7 +64,6 @@ public class RealWorldTestData {
         fromChicago.put("Portland", 2800.0);
         fromChicago.put("Atlanta", 1050.0);
         DISTANCES.put("Chicago", fromChicago);
-        
         
         Map<String, Double> fromLA = new HashMap<>();
         fromLA.put("New York", 3950.0);
@@ -104,7 +89,6 @@ public class RealWorldTestData {
         fromLA.put("Atlanta", 3100.0);
         DISTANCES.put("Los Angeles", fromLA);
         
-        
         Map<String, Double> fromDallas = new HashMap<>();
         fromDallas.put("New York", 2200.0);
         fromDallas.put("Los Angeles", 2000.0);
@@ -129,7 +113,6 @@ public class RealWorldTestData {
         fromDallas.put("Atlanta", 1200.0);
         DISTANCES.put("Dallas", fromDallas);
         
-        
         Map<String, Double> fromAtlanta = new HashMap<>();
         fromAtlanta.put("New York", 1200.0);
         fromAtlanta.put("Los Angeles", 3100.0);
@@ -153,7 +136,6 @@ public class RealWorldTestData {
         fromAtlanta.put("Portland", 3500.0);
         fromAtlanta.put("Atlanta", 0.0);
         DISTANCES.put("Atlanta", fromAtlanta);
-        
         
         Map<String, Double> fromSeattle = new HashMap<>();
         fromSeattle.put("New York", 4500.0);
@@ -180,64 +162,47 @@ public class RealWorldTestData {
         DISTANCES.put("Seattle", fromSeattle);
     }
     
-     
     public static double getDistance(String from, String to) {
         if (from.equals(to)) return 0.0;
-        
         Map<String, Double> fromDistances = DISTANCES.get(from);
         if (fromDistances != null && fromDistances.containsKey(to)) {
             return fromDistances.get(to);
         }
-        
-        
         Map<String, Double> toDistances = DISTANCES.get(to);
         if (toDistances != null && toDistances.containsKey(from)) {
             return toDistances.get(from);
         }
-        
-        
         Location loc1 = CITIES.get(from);
         Location loc2 = CITIES.get(to);
         if (loc1 != null && loc2 != null) {
-            return haversineDistance(loc1.getLatitude(), loc1.getLongitude(),
-                                    loc2.getLatitude(), loc2.getLongitude());
+            return haversineDistance(loc1.getLatitude(), loc1.getLongitude(), loc2.getLatitude(), loc2.getLongitude());
         }
-        
         return 1000.0; 
     }
     
-     
     private static double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
         final double R = 6371.0; 
-        
         double dLat = Math.toRadians(lat2 - lat1);
         double dLon = Math.toRadians(lon2 - lon1);
-        
         double a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
                    Math.cos(Math.toRadians(lat1)) * Math.cos(Math.toRadians(lat2)) *
                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-        
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        
         return R * c;
     }
     
-     
     public static String getRandomCustomerLocation(Random rand) {
         return CUSTOMER_LOCATIONS.get(rand.nextInt(CUSTOMER_LOCATIONS.size()));
     }
     
-     
     public static String getRandomWarehouse(Random rand) {
         return WAREHOUSES.get(rand.nextInt(WAREHOUSES.size()));
     }
     
-     
     public static List<String> getAllCities() {
         return new ArrayList<>(CITIES.keySet());
     }
     
-     
     private static Location createLocation(String city, double latitude, double longitude) {
         Location location = new Location();
         location.setCity(city);

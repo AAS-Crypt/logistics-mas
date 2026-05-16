@@ -4,11 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-
 public class ConfigLoader {
     private static final String CONFIG_FILE = "config.properties";
     private static Properties properties = null;
-
      
     public static Properties getProperties() {
         if (properties == null) {
@@ -17,7 +15,6 @@ public class ConfigLoader {
                     .getResourceAsStream(CONFIG_FILE)) {
                 if (input == null) {
                     System.err.println("Unable to find " + CONFIG_FILE);
-                    
                     loadDefaults();
                     return properties;
                 }
@@ -29,7 +26,6 @@ public class ConfigLoader {
         }
         return properties;
     }
-
      
     private static void loadDefaults() {
         properties.setProperty("mcaa.weight.cost", "0.3");
@@ -42,15 +38,18 @@ public class ConfigLoader {
         properties.setProperty("aera.threshold.high", "0.7");
         properties.setProperty("auction.responseTimeoutMs", "10000");
     }
-
-     
+    
     public static String getString(String key) {
+        String sysVal = System.getProperty(key);
+        if (sysVal != null) {
+            return sysVal;
+        }
         return getProperties().getProperty(key);
     }
 
-     
     public static double getDouble(String key, double defaultValue) {
-        String value = getProperties().getProperty(key);
+        String sysVal = System.getProperty(key);
+        String value = (sysVal != null) ? sysVal : getProperties().getProperty(key);
         if (value == null) {
             return defaultValue;
         }
@@ -62,9 +61,9 @@ public class ConfigLoader {
         }
     }
 
-     
     public static int getInt(String key, int defaultValue) {
-        String value = getProperties().getProperty(key);
+        String sysVal = System.getProperty(key);
+        String value = (sysVal != null) ? sysVal : getProperties().getProperty(key);
         if (value == null) {
             return defaultValue;
         }
@@ -76,9 +75,9 @@ public class ConfigLoader {
         }
     }
 
-     
     public static long getLong(String key, long defaultValue) {
-        String value = getProperties().getProperty(key);
+        String sysVal = System.getProperty(key);
+        String value = (sysVal != null) ? sysVal : getProperties().getProperty(key);
         if (value == null) {
             return defaultValue;
         }

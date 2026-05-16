@@ -32,11 +32,7 @@ public class ManagerAgent extends Agent {
         cm.registerOntology(LogisticsOntology.getInstance());
 
         Logger.info(getLocalName(), "ManagerAgent started.");
-
-        
         pcraIntervalMs = ConfigLoader.getLong("pcra.intervalMs", 300000L); 
-
-        
         addBehaviour(new CyclicBehaviour(this) {
             public void action() {
                 ACLMessage msg = receive();
@@ -61,21 +57,15 @@ public class ManagerAgent extends Agent {
                 }
             }
         });
-
-        
         addBehaviour(new TickerBehaviour(this, pcraIntervalMs) {
             protected void onTick() {
                 performPCRA();
             }
         });
     }
-
-     
     private void handleAeraEscalation(ACLMessage msg) {
         Logger.info(getLocalName(), "Received AERA escalation: " + msg.getContent());
     }
-
-     
     private void performPCRA() {
         Logger.info(getLocalName(), "PCRA: Starting periodic cluster replanning...");
         collectClusterState();
@@ -85,8 +75,6 @@ public class ManagerAgent extends Agent {
         applyFirstStageDecisions(solution);
         Logger.info(getLocalName(), "PCRA: Cluster replanning completed.");
     }
-
-     
     private void collectClusterState() {
         DFAgentDescription template = new DFAgentDescription();
         ServiceDescription sd = new ServiceDescription();
@@ -103,8 +91,6 @@ public class ManagerAgent extends Agent {
             Logger.error(getLocalName(), "PCRA: Failed to search DF for resources", e);
         }
     }
-
-     
     private List<Map<String, Object>> generateScenarios(int numScenarios) {
         List<Map<String, Object>> scenarios = new ArrayList<>();
         Random rand = new Random();
@@ -119,8 +105,6 @@ public class ManagerAgent extends Agent {
         Logger.info(getLocalName(), "PCRA: Generated " + numScenarios + " scenarios.");
         return scenarios;
     }
-
-     
     private Map<String, Object> solveDeterministicEquivalent(List<Map<String, Object>> scenarios) {
         Map<String, Object> solution = new HashMap<>();
         Map<AID, Double> avgDemand = new HashMap<>();
@@ -146,15 +130,12 @@ public class ManagerAgent extends Agent {
         return solution;
     }
 
-     
     private void applyFirstStageDecisions(Map<String, Object> solution) {
         Logger.info(getLocalName(), "PCRA: Applying first-stage decisions...");
         for (Map.Entry<String, Object> entry : solution.entrySet()) {
             Logger.info(getLocalName(), "PCRA Decision: " + entry.getKey() + " = " + entry.getValue());
         }
     }
-
-     
     private void handleConflict(ConflictData conflict, AID resource) {
         List<AID> orders = conflict.getOrders();
         List<Double> winUtils = conflict.getUtilitiesIfWin();
