@@ -51,7 +51,8 @@ public class LinearProgrammingSolver {
 
         for (int k = 0; k < numVars; k++) {
             model.addVariable();
-            model.getVariable(k).binary().lower(0).upper(1);
+            // model.getVariable(k).binary().lower(0).upper(1); // Too low RAM to run
+            model.getVariable(k).lower(0).upper(1);
         }
         model.addExpression("objective").weight(1.0);
         for (int k = 0; k < numVars; k++) {

@@ -1,0 +1,42 @@
+==============================================================================
+BENCHMARK SUMMARY - MCAA vs Vickrey vs Double Auction vs LP
+==============================================================================
+Datasets: 2 | Files loaded: 2 | Total rows: 8
+
+==============================================================================
+  Olist E-Commerce  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.9995±nan        199806±nan         11.0±nan    0.0490
+Vickrey            0.9995±nan        201588±nan          8.0±nan    0.0480
+DoubleAuction      0.9995±nan        700429±nan          8.0±nan    0.0070
+LP                 0.9995±nan        199778±nan        609.0±nan    0.0490
+
+Best per Metric (by mean):
+  Highest Service Level: DoubleAuction (0.9995)
+  Lowest Total Cost:      LP (199778)
+  Fastest Execution:      DoubleAuction (8.0 ms)
+
+==============================================================================
+  INCOM2024  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.9989±nan        618979±nan         23.0±nan    0.4277
+Vickrey            0.9988±nan        719418±nan         25.0±nan    0.4268
+DoubleAuction      0.9986±nan        941661±nan         60.0±nan    0.4196
+LP                 1.0000±nan         78147±nan       4932.0±nan    0.4291
+
+Best per Metric (by mean):
+  Highest Service Level: LP (1.0000)
+  Lowest Total Cost:      LP (78147)
+  Fastest Execution:      MCAA (23.0 ms)
+
+==============================================================================

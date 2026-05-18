@@ -1,0 +1,123 @@
+==============================================================================
+BENCHMARK SUMMARY - MCAA vs Vickrey vs Double Auction vs LP
+==============================================================================
+Datasets: 6 | Files loaded: 6 | Total rows: 14,420
+
+==============================================================================
+  Synthetic Grid  [1 run(s), 14,400 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.6440±0.1030      42898±4355         0.0±0.1    0.2493
+Vickrey            0.6284±0.1035      53220±5256         0.0±0.1    0.2477
+DoubleAuction      0.6302±0.1076      76550±6607         0.0±0.1    0.2199
+LP                 0.7351±0.0952      42993±4352         0.4±3.8    0.2516
+
+Best per Metric (by mean):
+  Highest Service Level: LP (0.7351)
+  Lowest Total Cost:      MCAA (42898)
+  Fastest Execution:      Vickrey (0.0 ms)
+
+==============================================================================
+  Olist E-Commerce  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               1.0000±nan        199806±nan          9.0±nan    0.0490
+Vickrey            1.0000±nan        201588±nan          6.0±nan    0.0480
+DoubleAuction      1.0000±nan        700429±nan          6.0±nan    0.0070
+LP                 1.0000±nan        199778±nan        369.0±nan    0.0490
+
+Best per Metric (by mean):
+  Highest Service Level: DoubleAuction (1.0000)
+  Lowest Total Cost:      LP (199778)
+  Fastest Execution:      DoubleAuction (6.0 ms)
+
+==============================================================================
+  Supply Chain  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.9770±nan         18321±nan          9.0±nan    0.5362
+Vickrey            0.9690±nan         27622±nan         10.0±nan    0.0945
+DoubleAuction      0.9990±nan        295842±nan         20.0±nan    0.8115
+LP                 0.9875±nan         12359±nan       5143.0±nan    0.4290
+
+Best per Metric (by mean):
+  Highest Service Level: DoubleAuction (0.9990)
+  Lowest Total Cost:      LP (12359)
+  Fastest Execution:      MCAA (9.0 ms)
+
+==============================================================================
+  INCOM2024  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.9995±nan         81276±nan          7.0±nan    0.4300
+Vickrey            1.0000±nan         93870±nan          9.0±nan    0.4260
+DoubleAuction      0.9995±nan        122793±nan         17.0±nan    0.4195
+LP                 1.0000±nan         78145±nan       2233.0±nan    0.4291
+
+Best per Metric (by mean):
+  Highest Service Level: LP (1.0000)
+  Lowest Total Cost:      LP (78145)
+  Fastest Execution:      MCAA (7.0 ms)
+
+==============================================================================
+  TLC Historical  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               0.0000±nan         36574±nan         11.0±nan    0.0735
+Vickrey            0.0000±nan         38327±nan         10.0±nan    0.0654
+DoubleAuction      0.0000±nan         44382±nan         11.0±nan    0.0337
+LP                 0.0000±nan         34182±nan       2593.0±nan    0.0559
+
+Best per Metric (by mean):
+  Highest Service Level: DoubleAuction (0.0000)
+  Lowest Total Cost:      LP (34182)
+  Fastest Execution:      Vickrey (10.0 ms)
+
+==============================================================================
+  TLC Synth Deadlines  [1 run(s), 4 rows]
+==============================================================================
+
+Per-Algorithm Averages (mean ± std):
+------------------------------------------------------------------------------
+Algorithm                ServiceLvl          TotalCost        Time(ms)       Gini
+------------------------------------------------------------------------------
+MCAA               1.0000±nan         36574±nan          8.0±nan    0.0735
+Vickrey            1.0000±nan         38327±nan          8.0±nan    0.0654
+DoubleAuction      1.0000±nan         44382±nan          9.0±nan    0.0337
+LP                 1.0000±nan         34182±nan       2538.0±nan    0.0559
+
+Best per Metric (by mean):
+  Highest Service Level: DoubleAuction (1.0000)
+  Lowest Total Cost:      LP (34182)
+  Fastest Execution:      MCAA (8.0 ms)
+
+Service Level by ETA Variance x Weight Strategy (benchmark grid):
+------------------------------------------------------------------------------
+weightStrategy  balanced  costHeavy  timeHeavy
+etaVariance                                   
+0.0               0.6560     0.6552     0.6594
+0.1               0.6555     0.6545     0.6591
+0.2               0.6573     0.6561     0.6617
+0.3               0.6651     0.6624     0.6709
+
+==============================================================================

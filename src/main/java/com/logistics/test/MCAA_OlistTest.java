@@ -50,24 +50,23 @@ public class MCAA_OlistTest {
         }
     }
 
-    private static final int LP_MAX_ORDERS = Integer.getInteger("lp.maxOrders", 2000);
+    private static final int MAX_ORDERS = Integer.getInteger("max.orders", 2000);
+
     static RunResult runAlgorithm(String algoName, List<Order> orders,
                                    Map<Integer, List<Proposal>> proposals, long seed) {
+        int originalSize = orders.size();
+        if (MAX_ORDERS > 0 && orders.size() > MAX_ORDERS) {
+            orders = new ArrayList<>(orders.subList(0, MAX_ORDERS));
+            Map<Integer, List<Proposal>> capped = new HashMap<>();
+            for (int i = 0; i < MAX_ORDERS; i++) {
+                capped.put(i, deepCopyEntry(proposals.get(i)));
+            }
+            proposals = capped;
+        }
         Map<Integer, List<Proposal>> local = deepCopy(proposals);
         long t0 = System.currentTimeMillis();
         Map<Integer, Integer> alloc;
 
-        if ("LP".equals(algoName) && LP_MAX_ORDERS > 0 && orders.size() > LP_MAX_ORDERS) {
-            List<Order> cappedOrders = orders.subList(0, LP_MAX_ORDERS);
-            Map<Integer, List<Proposal>> cappedProps = new HashMap<>();
-            for (int i = 0; i < LP_MAX_ORDERS; i++) {
-                cappedProps.put(i, local.getOrDefault(i, Collections.emptyList()));
-            }
-            System.out.printf("  LP capped: %d -> %d orders (lp.maxOrders=%d)%n", orders.size(), LP_MAX_ORDERS, LP_MAX_ORDERS);
-            alloc = LinearProgrammingSolver.allocate(cappedOrders, cappedProps);
-            long t = System.currentTimeMillis() - t0;
-            return computeMetrics(cappedOrders, cappedProps, alloc, t);
-        }
         switch (algoName) {
             case "MCAA":  alloc = runMCAA(orders, local); break;
             case "Vickrey": alloc = VickreyAuction.allocate(orders, local); break;
@@ -76,7 +75,27 @@ public class MCAA_OlistTest {
             default: throw new IllegalArgumentException("Unknown: " + algoName);
         }
         long t = System.currentTimeMillis() - t0;
-        return computeMetrics(orders, local, alloc, t);
+        RunResult r = computeMetrics(orders, local, alloc, t);
+        if (MAX_ORDERS > 0 && originalSize > MAX_ORDERS) {
+            r.numOrders = MAX_ORDERS;
+        }
+        return r;
+    }
+
+    private static List<Proposal> deepCopyEntry(List<Proposal> orig) {
+        if (orig == null) return Collections.emptyList();
+        List<Proposal> copy = new ArrayList<>();
+        for (Proposal p : orig) {
+            Proposal cp = new Proposal();
+            cp.setPrice(p.getPrice());
+            cp.setReliability(p.getReliability());
+            cp.setEstimatedDelivery(p.getEstimatedDelivery() != null
+                    ? new Date(p.getEstimatedDelivery().getTime()) : null);
+            cp.setOrder(p.getOrder());
+            cp.setResource(p.getResource());
+            copy.add(cp);
+        }
+        return copy;
     }
 
     static Map<Integer, Integer> runMCAA(List<Order> orders, Map<Integer, List<Proposal>> proposals) {
@@ -96,7 +115,8 @@ public class MCAA_OlistTest {
         return alloc;
     }
 
-    static RunResult computeMetrics(List<Order> orders, Map<Integer, List<Proposal>> proposals, Map<Integer, Integer> alloc, long execMs) {
+    static RunResult computeMetrics(List<Order> orders, Map<Integer, List<Proposal>> proposals,
+                                     Map<Integer, Integer> alloc, long execMs) {
         RunResult r = new RunResult();
         r.executionTimeMs = execMs;
         int onTime = 0;
@@ -116,6 +136,7 @@ public class MCAA_OlistTest {
         }
         r.serviceLevel = orders.size() > 0 ? (double) onTime / orders.size() : 0;
         r.giniCoefficient = computeGini(costs);
+        r.numOrders = orders.size();
         return r;
     }
 
@@ -140,7 +161,8 @@ public class MCAA_OlistTest {
                 Proposal cp = new Proposal();
                 cp.setPrice(p.getPrice());
                 cp.setReliability(p.getReliability());
-                cp.setEstimatedDelivery(p.getEstimatedDelivery() != null ? new Date(p.getEstimatedDelivery().getTime()) : null);
+                cp.setEstimatedDelivery(p.getEstimatedDelivery() != null
+                        ? new Date(p.getEstimatedDelivery().getTime()) : null);
                 cp.setOrder(p.getOrder());
                 cp.setResource(p.getResource());
                 clist.add(cp);
@@ -155,11 +177,14 @@ public class MCAA_OlistTest {
     }
 
     static void writeCsvRow(PrintWriter csv, long seed, int n, String algo, String dataset, RunResult r) {
-        csv.printf(Locale.US, "%d,%s,%d,%s,%.4f,%.2f,%d,%.4f%n", seed, dataset, n, algo, r.serviceLevel, r.totalCost, r.executionTimeMs, r.giniCoefficient);
+        csv.printf(Locale.US, "%d,%s,%d,%s,%.4f,%.2f,%d,%.4f%n",
+                seed, dataset, r.numOrders > 0 ? r.numOrders : n, algo,
+                r.serviceLevel, r.totalCost, r.executionTimeMs, r.giniCoefficient);
     }
 
     static class RunResult {
         double serviceLevel, totalCost, giniCoefficient;
         long executionTimeMs;
+        int numOrders;
     }
 }
